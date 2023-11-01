@@ -76,22 +76,22 @@ export const CustomerTable = () => {
                                         {item.date}
                                     </td>
                                     <th scope="row" className="px-6 font-semibold text-[0.8375rem] py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                                        {item.customer}
+                                        {item.fullname}
                                     </th>
                                     <td className="px-6 py-4 text-[0.8375rem]">
-                                        {item.transactionID}
+                                        {item.purpose}
                                     </td>
                                     <td className="px-5 py-4 ">
-                                        <p className={item.status === 'Approved' ? 'text-[0.8375rem] p-1 rounded-md text-[#1CA78B] bg-[#F0F4F9]' : 'text-[0.8375rem] p-1 rounded-md text-[#FFCF5C] bg-[#FFCF5C]/10'}>
-                                            {item.status}
+                                        <p className={item.type === 'Credit' ? 'text-[0.8375rem] p-1 rounded-md text-[#1CA78B] bg-[#F0F4F9]' : 'text-[0.8375rem] p-1 rounded-md text-[red] bg-[red]/10'}>
+                                            {item.type}
                                         </p>
                                     </td>
                                     <td className="px-6 py-4 text-[0.8375rem]">
-                                        <img src={item.channel} className='' alt={item.channel} />
+                                        {item.amount}
                                     </td>
 
                                     <td className="px-6 py-4 text-[0.8375rem]">
-                                        {item.amount}
+                                        {item.action}
                                     </td>
 
 
