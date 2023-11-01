@@ -38,71 +38,66 @@ export const CustomerTable = () => {
     return (
         <section>
             <div>
-                <div className="overflow-x-auto shadow-md sm:rounded-t-lg">
-                    <table className="w-full table-auto text-sm text-left text-gray-500 dark:text-gray-400">
-                        {/* Table header */}
-                        <thead className="text-xs text-gray-700 bg-gray-300 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
-                                <th scope="col" className="px-6 py-3 text-[0.825rem]">
-                                    Date
-                                </th>
-                                <th scope="col" className="px-6 py-3 text-[0.825rem]">
-                                    Full Name
-                                </th>
-                                <th scope="col" className="px-6 py-3 text-[0.825rem]">
-                                    Purpose
-                                </th>
-                                <th scope="col" className="px-6 py-3 text-[0.825rem]">
-                                    Type
-                                </th>
-                                <th scope="col" className="px-6 py-3 text-[0.825rem]">
-                                    Amount
-                                </th>
-                                <th scope="col" className="px-6 py-3 text-[0.825rem]">
-                                    Action
-                                </th>
-                                <th scope="col" className="px-6 py-3 text-[0.825rem]">
-                                    {/* empty for the print icons */}
-                                </th>
-                            </tr>
-                        </thead>
-                        {/* end of Table header) */}
+                <div className="overflow-x-auto bg-white p-4 shadow-md sm:rounded-t-lg">
 
-                        {/* Table body */}
-                        {displayedData.map((item, index) => (
-                            <tbody key={index}>
-                                <tr className="bg-white font-medium border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                    <td className="px-6 py-4 text-[0.8375rem]">
-                                        {item.date}
-                                    </td>
-                                    <th scope="row" className="px-6 font-semibold text-[0.8375rem] py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                                        {item.fullname}
+
+                    <div className="overflow-x-auto">
+                        <table className="w-full table-auto text-sm text-left text-[#181336] dark:text-gray-400">
+                            {/* Table header */}
+                            <thead className="text-xs text-gray-700 bg-gray-300 dark:bg-gray-700 dark:text-gray-400">
+                                <tr>
+                                    <th scope="col" className="px-6 py-3 text-[0.825rem]">
+                                        Date
                                     </th>
-                                    <td className="px-6 py-4 text-[0.8375rem]">
-                                        {item.purpose}
-                                    </td>
-                                    <td className="px-5 py-4 ">
-                                        <p className={item.type === 'Credit' ? 'text-[0.8375rem] p-1 rounded-md text-[#1CA78B] bg-[#F0F4F9]' : 'text-[0.8375rem] p-1 rounded-md text-[red] bg-[red]/10'}>
-                                            {item.type}
-                                        </p>
-                                    </td>
-                                    <td className="px-6 py-4 text-[0.8375rem]">
-                                        {item.amount}
-                                    </td>
-
-                                    <td className="px-6 py-4 text-[0.8375rem]">
-                                        {item.action}
-                                    </td>
-
-
-                                    <td className="px-4 py-4 text-[0.8375rem]">
-                                        <BsThreeDots className="h-6 w-6 cursor-pointer" title='action' />
-                                    </td>
+                                    <th scope="col" className="px-6 py-3 text-[0.825rem]">
+                                        Full Name
+                                    </th>
+                                    <th scope="col" className="px-6 py-3 text-[0.825rem]">
+                                        Purpose
+                                    </th>
+                                    <th scope="col" className="px-6 py-3 text-[0.825rem]">
+                                        Type
+                                    </th>
+                                    <th scope="col" className="px-6 py-3 text-[0.825rem]">
+                                        Amount
+                                    </th>
+                                    <th scope="col" className="px-6 py-3 text-[0.825rem]">
+                                        Action
+                                    </th>
                                 </tr>
-                            </tbody>
-                        ))}
-                    </table>
+                            </thead>
+                            {/* end of Table header) */}
 
+                            {/* Table body */}
+                            {displayedData.map((item, index) => (
+                                <tbody key={index}>
+                                    <tr className="bg-white font-medium border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <td className="px-6 py-4 font-semibold text-[0.8375rem]">
+                                            {item.date}
+                                        </td>
+                                        <th scope="row" className="px-6 font-semibold text-[0.8375rem] py-4 whitespace-nowrap dark:text-white">
+                                            {item.fullname}
+                                        </th>
+                                        <td className="px-6 py-4 font-semibold text-[0.8375rem]">
+                                            {item.purpose}
+                                        </td>
+                                        <td className="px-5 py-4 ">
+                                            <p className={item.type === 'Credit' ? 'text-[0.8375rem] p-1 rounded-md text-[#1CA78B] bg-[#F0F4F9]' : 'text-[0.8375rem] p-1 rounded-md text-[red] bg-[red]/10'}>
+                                                {item.type}
+                                            </p>
+                                        </td>
+                                        <td className="px-6 py-4 font-semibold text-[0.8375rem]">
+                                            {item.amount}
+                                        </td>
+                                        <td className="px-4 py-4 text-[0.8375rem]">
+                                            <BsThreeDots className="h-6 w-6 cursor-pointer" title='Action' />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            ))}
+                        </table>
+
+                    </div>
                 </div>
 
                 {/* Pagination */}
