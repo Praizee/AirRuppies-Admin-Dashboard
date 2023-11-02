@@ -4,23 +4,24 @@ import PublicLayout from "../Layouts/PublicLayout";
 import AuthenticatedLayout from "../Layouts/AuthenticatedLayout";
 import AuthRoute from './AuthRoute'; // Import the AuthRoute component
 
-import Contact from "../Pages/Contact/Contact";
 import Login from "../Pages/Login/Login";
-import Dashboard from "../Pages/Dashboard/Dashboard";
 import SignUp from "../Pages/SignUp/SignUp";
-import Profile from "../Pages/Profile/Profile";
-import PinManagement from "../Pages/PinManagement/PinManagement";
-import ChangePassword from "../Pages/ChangePassword/ChangePassword";
-import FundWallet from "../Pages/FundWallet/FundWallet";
-import BuyRecharge from "../Pages/BuyData/BuyRecharge";
-import ElectricityPayment from "../Pages/ElectricityPayment/ElectricityPayment";
-import CableSubscription from "../Pages/CableSubscription/CableSubscription";
-import Transfer from "../Pages/Transfer/Transfer";
-import TransactionHistory from "../Pages/TransactionHistory/TransactionHistory";
-import Support from "../Pages/Support/Support";
-import Faqs from "../Pages/Faqs/Faqs";
-import Settings from "../Pages/Settings/Settings";
 import ResetPassword from "../Pages/ResetPassword/ResetPassword";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import Transactions from "../Pages/Transactions/Transactions";
+import Savings from "../Pages/Savings/Savings";
+import Cards from "../Pages/Cards/Cards";
+import Account from "../Pages/Account/Account";
+import Customers from "../Pages/Customers/Customers";
+import BillPayment from "../Pages/BillPayment/BillPayment";
+import Admin from "../Pages/Admin/Admin";
+import Roles from "../Pages/Roles/Roles";
+import Permissions from "../Pages/Permissions/Permissions";
+import Profile from "../Pages/Profile/Profile";
+import Settings from "../Pages/Settings/Settings";
+import Ads from "../Pages/Ads/Ads";
+import Promotions from "../Pages/Promotions/Promotions";
+import OTAUpdate from "../Pages/OTAUpdate/OTAUpdate";
 import NotFoundPage from "../Pages/404 Page/NotFoundPage";
 
 export default function App() {
@@ -37,19 +38,20 @@ export default function App() {
         {/* <Route index element={<Dashboard />} /> */}
         {/* change this back to being the index element when the authentication endpoint is setup */}
         <Route path="dashboard" element={<AuthRoute><Dashboard /></AuthRoute>} />
+        <Route path="transactions" element={<AuthRoute><Transactions /></AuthRoute>} />
+        <Route path="savings" element={<AuthRoute><Savings /></AuthRoute>} />
+        <Route path="cards" element={<AuthRoute><Cards /></AuthRoute>} />
+        <Route path="account" element={<AuthRoute><Account /></AuthRoute>} />
+        <Route path="customers" element={<AuthRoute><Customers /></AuthRoute>} />
+        <Route path="bill-payment" element={<AuthRoute><BillPayment /></AuthRoute>} />
+        <Route path="admin" element={<AuthRoute><Admin /></AuthRoute>} />
+        <Route path="roles" element={<AuthRoute><Roles /></AuthRoute>} />
+        <Route path="permissions" element={<AuthRoute><Permissions /></AuthRoute>} />
         <Route path="profile" element={<AuthRoute><Profile /></AuthRoute>} />
-        <Route path="pin-management" element={<AuthRoute><PinManagement /></AuthRoute>} />
-        <Route path="change-password" element={<AuthRoute><ChangePassword /></AuthRoute>} />
-        <Route path="fund-wallet" element={<AuthRoute><FundWallet /></AuthRoute>} />
-        <Route path="topup" element={<AuthRoute><BuyRecharge /></AuthRoute>} />
-        <Route path="electricity-payment" element={<AuthRoute><ElectricityPayment /></AuthRoute>} />
-        <Route path="cable-subscription" element={<AuthRoute><CableSubscription /></AuthRoute>} />
-        <Route path="transfer" element={<AuthRoute><Transfer /></AuthRoute>} />
-        <Route path="transaction-history" element={<AuthRoute><TransactionHistory /></AuthRoute>} />
-        <Route path="support" element={<AuthRoute><Support /></AuthRoute>} />
-        <Route path="faqs" element={<AuthRoute><Faqs /></AuthRoute>} />
         <Route path="settings" element={<AuthRoute><Settings /></AuthRoute>} />
-        <Route path="contact" element={<AuthRoute><Contact /></AuthRoute>} />
+        <Route path="ads" element={<AuthRoute><Ads /></AuthRoute>} />
+        <Route path="promotions" element={<AuthRoute><Promotions /></AuthRoute>} />
+        <Route path="ota-update" element={<AuthRoute><OTAUpdate /></AuthRoute>} />
       </Route>
       {/* This is the catch-all route */}
       <Route path="*" element={<NotFoundPage />} />
