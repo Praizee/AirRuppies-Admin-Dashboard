@@ -5,8 +5,8 @@ const Income = () => {
         <section className="">
             <div className="">
                 <div className="border bg-white p-4 rounded-lg space-y-1 relative">
-                    <p className="text-[0.625rem] font-medium">
-                        WALLET BALANCE
+                    <p className="text-[1rem] font-medium">
+                        Income/Profit
                     </p>
                     <span className="flex gap-4">
                         <h2 className="text-[1.25rem] font-bold">

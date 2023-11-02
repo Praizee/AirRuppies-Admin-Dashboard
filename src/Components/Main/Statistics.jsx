@@ -9,7 +9,7 @@ const Statistics = () => {
                 <div className="relative grid tablet:w- w-max laptop:grid-cols-4 tablet:grid-cols-3 grid-cols-1 gap-4">
 
                     <div className="border bg-white p-4 rounded-lg space-y-1 relative">
-                        <p className="text-[0.625rem] font-medium">
+                        <p className="text-[1rem] font-medium">
                             Total Users
                         </p>
                         <span className="flex gap-4">
@@ -28,7 +28,7 @@ const Statistics = () => {
                     </div>
 
                     <div className="border bg-white p-4 rounded-lg space-y-1 relative">
-                        <p className="text-[0.625rem] font-medium">
+                        <p className="text-[1rem] font-medium">
                             Total Inactive Users
                         </p>
                         <span className="flex gap-4">
@@ -47,7 +47,7 @@ const Statistics = () => {
                     </div>
 
                     <div className="border bg-white p-4 rounded-lg space-y-1 relative">
-                        <p className="text-[0.625rem] font-medium">
+                        <p className="text-[1rem] font-medium">
                             Active Users
                         </p>
                         <span className="flex gap-4">
@@ -66,7 +66,7 @@ const Statistics = () => {
                     </div>
 
                     <div className="border bg-white p-4 rounded-lg space-y-1 relative">
-                        <p className="text-[0.625rem] font-medium">
+                        <p className="text-[1rem] font-medium">
                             Blocked Accounts
                         </p>
                         <span className="flex gap-4">

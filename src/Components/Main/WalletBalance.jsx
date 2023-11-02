@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const Revenue = () => {
+const WalletBalance = () => {
     return (
         <section className="">
             <div className="">
-                <div className="border bg-white p-4 rounded-lg space-y-1 relative">
+                <div className="border my-4 bg-white p-4 rounded-lg space-y-1 relative">
                     <p className="text-[1rem] font-medium">
-                        Revenue
+                        Wallet Balance
                     </p>
                     <span className="flex gap-4">
                         <h2 className="text-[1.25rem] font-bold">
@@ -27,7 +27,7 @@ const Revenue = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Revenue
+export default WalletBalance;
