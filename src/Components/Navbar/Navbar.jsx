@@ -15,7 +15,7 @@ const Navbar = ({ toggleSidebar }) => {
       <div className="flex-1 laptop:mx-[rem] mx-">
         <div className="flex-none">
           {/* Button to toggle the sidebar */}
-          <button className="btn btn-square btn-ghost" onClick={toggleSidebar}>
+          <button className="btn btn-square btn-ghost laptop:hidden" onClick={toggleSidebar}>
             <FiMenu size={25} /> {/* Hamburger menu icon */}
           </button>
         </div>
