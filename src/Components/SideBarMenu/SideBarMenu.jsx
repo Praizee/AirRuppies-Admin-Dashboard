@@ -37,13 +37,6 @@ export function SidebarWithSearch({ showSidebar }) {
     }
     // end of logout
 
-    const [open, setOpen] = React.useState(0);
-
-    const handleOpen = (value) => {
-        setOpen(open === value ? 0 : value);
-    };
-
-
     return (
         // <Card className="h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
         <Card
