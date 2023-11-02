@@ -3,7 +3,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from '../../Firebase/firebase.js';
 
 import { motion } from "framer-motion";
-import AvailableBalance from "../../Components/Main/AvailableBalance";
+import WalletBalance from "../../Components/Main/WalletBalance";
 import Revenue from "../../Components/Main/Revenue";
 import Income from "../../Components/Main/Income";
 import HeaderGraph from "../../Components/Main/HeaderGraph";
@@ -55,11 +55,11 @@ const Dashboard = () => {
 
             <div className="relative space-y-4">
               <div className='space-y-2'>
-                <h1 className="text-[1.5rem] flex gap-2 text-[#2E2E3A] leading-[2.025rem]">
+                <h1 className="text-[1.5rem] font-black flex gap-2 text-[#2E2E3A] leading-[2.025rem]">
                   <GreetingMessage />
-                  <span className="text-blue-500 text-[1.5rem] font-black">
-                    {user && user.firstName ? user.firstName : 'User'}
-                  </span>
+
+                  {user && user.firstName ? user.firstName : 'Admin'}
+
                 </h1>
 
                 <h1 className="text-[1rem] text-[#2E2E3A] leading-normal font-bold">
@@ -71,14 +71,14 @@ const Dashboard = () => {
                 <Statistics />
               </div>
 
-              <div className="laptop:flex gap-4 justify-betwee">
+              <div className="laptop:flex gap- justify-between">
                 <HeaderGraph />
                 <div>
                   <div className="laptop:flex gap-4 space-y-4 mt-4 laptop:space-y-0 laptop:mt-0">
                     <Income />
                     <Revenue />
                   </div>
-                  <AvailableBalance />
+                  <WalletBalance />
                 </div>
               </div>
 
