@@ -14,7 +14,7 @@ const Navbar = ({ toggleSidebar }) => {
     <div className="navbar bg-white border-2 border-t-transparent fixed py-4 top-0 z-[100]">
       <div className="flex-1 laptop:mx-[rem] mx-">
         <div className="flex-none">
-          {/* Button to toggle the sidebar */}
+          {/* Button to toggle the sidebar (hidden on wider screens) */}
           <button className="btn btn-square btn-ghost laptop:hidden" onClick={toggleSidebar}>
             <FiMenu size={25} /> {/* Hamburger menu icon */}
           </button>
