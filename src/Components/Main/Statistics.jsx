@@ -8,16 +8,16 @@ const Statistics = () => {
 
                 <div className="relative grid tablet:w- w-max laptop:grid-cols-4 tablet:grid-cols-3 grid-cols-1 gap-4">
 
-                    <div className="border bg-white p-4 rounded-lg space-y-1 relative">
+                    <div className="border bg-white p-4 shadow-md rounded-lg space-y-1 relative">
                         <p className="text-[1rem] font-medium">
                             Total Users
                         </p>
                         <span className="flex gap-4">
                             <h2 className="text-[1.25rem] font-bold">
-                                21,224
+                                21,459
                             </h2>
-                            <p className="text-[#FD4438] py-1 text-[0.9375rem] font-bold">
-                                ↓ 0.7%
+                            <p className="text-[#40DD7F] py-1 text-[0.9375rem] font-bold">
+                                (+29%)
                             </p>
                         </span>
                         <span className="">
@@ -27,16 +27,16 @@ const Statistics = () => {
                         </span>
                     </div>
 
-                    <div className="border bg-white p-4 rounded-lg space-y-1 relative">
+                    <div className="border bg-white p-4 shadow-md rounded-lg space-y-1 relative">
                         <p className="text-[1rem] font-medium">
                             Total Inactive Users
                         </p>
                         <span className="flex gap-4">
                             <h2 className="text-[1.25rem] font-bold">
-                                129324
+                                4,567
                             </h2>
-                            <p className="text-[#FD4438] py-1 text-[0.9375rem] font-bold">
-                                ↓ 8.5%
+                            <p className="text-[#40DD7F] py-1 text-[0.9375rem] font-bold">
+                                (+18%)
                             </p>
                         </span>
                         <span className="">
@@ -46,16 +46,16 @@ const Statistics = () => {
                         </span>
                     </div>
 
-                    <div className="border bg-white p-4 rounded-lg space-y-1 relative">
+                    <div className="border bg-white p-4 shadow-md rounded-lg space-y-1 relative">
                         <p className="text-[1rem] font-medium">
                             Active Users
                         </p>
                         <span className="flex gap-4">
                             <h2 className="text-[1.25rem] font-bold">
-                                324
+                                19,860
                             </h2>
-                            <p className="text-[#FD4438] py-1 text-[0.9375rem] font-bold">
-                                ↓ 8.5%
+                            <p className="text-[#E93C3C] py-1 text-[0.9375rem] font-bold">
+                                (-14%)
                             </p>
                         </span>
                         <span className="">
@@ -65,16 +65,16 @@ const Statistics = () => {
                         </span>
                     </div>
 
-                    <div className="border bg-white p-4 rounded-lg space-y-1 relative">
+                    <div className="border bg-white p-4 shadow-md rounded-lg space-y-1 relative">
                         <p className="text-[1rem] font-medium">
                             Blocked Accounts
                         </p>
                         <span className="flex gap-4">
                             <h2 className="text-[1.25rem] font-bold">
-                                324
+                                237
                             </h2>
-                            <p className="text-[#FD4438] py-1 text-[0.9375rem] font-bold">
-                                ↓ 8.5%
+                            <p className="text-[#E93C3C] py-1 text-[0.9375rem] font-bold">
+                                (+42%)
                             </p>
                         </span>
                         <span className="">
