@@ -23,6 +23,7 @@ const Navbar = ({ toggleSidebar }) => {
         <div className="flex-1 mx-1">
           <a className="leading-[1.5rem] text-black font-black text-[1.5rem]">
             <img src={AppLogo} alt="Web-Logo" className="" />
+            <p className="sr-only">Logo</p>
           </a>
         </div>
       </div>
