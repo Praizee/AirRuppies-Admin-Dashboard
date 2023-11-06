@@ -7,6 +7,7 @@ module.exports = withMT({
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {},
@@ -47,7 +48,7 @@ module.exports = withMT({
       black: '900',
     }
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('flowbite/plugin')],
   daisyui: {
     themes: ["light", "dark", "cupcake"],
   },
