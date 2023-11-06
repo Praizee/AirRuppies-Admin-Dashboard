@@ -25,7 +25,7 @@ export const CustomerTableData = [
         date: "13 July, 2021",
         fullname: "Tunde Kofo",
         purpose: "Food Delivery",
-        type: "Dedit",
+        type: "Debit",
         amount: "N4,345.00",
     },
     {

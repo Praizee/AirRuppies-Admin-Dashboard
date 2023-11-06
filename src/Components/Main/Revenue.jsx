@@ -1,28 +1,27 @@
 import React from 'react'
+import RevenueChart from "../../assets/Revenue-Chart.png"
+import Days from "../../assets/Days.png"
 
 const Revenue = () => {
     return (
         <section className="">
             <div className="">
-                <div className="border bg-white p-4 rounded-lg space-y-1 relative">
-                    <p className="text-[1rem] font-medium">
-                        Revenue
-                    </p>
-                    <span className="flex gap-4">
-                        <h2 className="text-[1.25rem] font-bold">
-                            21,224
+                <div className="border bg-white shadow-lg text-[#32475CDE]  rounded-lg space-y-1 relative">
+                    <span className="">
+                        <p className="text-[1rem] px-4 pt-4 font-bold">
+                            Revenue
+                        </p>
+                        <h2 className="text-[1.5rem] px-4 py-0 font-black">
+                            N425k
                         </h2>
-                        <p className="text-[#FD4438] py-1 text-[0.9375rem] font-bold">
-                            ↓ 0.7%
-                        </p>
                     </span>
-                    <span className="flex space-x-1">
-                        <p className="text-[#00D88A] font-semibold text-[0.725rem]">
-                            +17 New
-                        </p>
-                        <p className="text-[0.725rem] font-semibold">
-                            customers compared to yesterday
-                        </p>
+
+                    <span className='p-0'>
+                        <img src={RevenueChart} className="p-0" alt="income-chart" />
+                        <img src={Days} className="p-0" alt="days" />
+                        {/* <p className='text-[#32475C61] text-[0.75rem] font-semibold text-center'>
+                            M T W T F S S
+                        </p> */}
                     </span>
                 </div>
             </div>

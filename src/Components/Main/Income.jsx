@@ -1,28 +1,22 @@
-import React from 'react'
+import React from "react"
+import IncomeChart from "../../assets/Income-Chart.png"
 
 const Income = () => {
     return (
         <section className="">
             <div className="">
-                <div className="border bg-white p-4 rounded-lg space-y-1 relative">
-                    <p className="text-[1rem] font-medium">
-                        Income/Profit
-                    </p>
-                    <span className="flex gap-4">
-                        <h2 className="text-[1.25rem] font-bold">
-                            21,224
+                <div className="border bg-white shadow-md text-[#32475CDE] rounded-lg space-y-1 relative">
+                    <span className="">
+                        <p className="text-[1rem] px-4 pt-4 font-bold">
+                            Income/Profit
+                        </p>
+                        <h2 className="text-[1.5rem] px-4 py-0 font-black">
+                            N2468
                         </h2>
-                        <p className="text-[#FD4438] py-1 text-[0.9375rem] font-bold">
-                            ↓ 0.7%
-                        </p>
                     </span>
-                    <span className="flex space-x-1">
-                        <p className="text-[#00D88A] font-semibold text-[0.725rem]">
-                            +17 New
-                        </p>
-                        <p className="text-[0.725rem] font-semibold">
-                            customers compared to yesterday
-                        </p>
+
+                    <span>
+                        <img src={IncomeChart} className="mt-1" alt="income-chart" />
                     </span>
                 </div>
             </div>
