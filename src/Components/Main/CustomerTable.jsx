@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BsThreeDots } from "react-icons/bs";
+import { BsThreeDots, BsFilter } from "react-icons/bs";
 import { CustomerTableData } from './content';
 
 
@@ -38,13 +38,70 @@ export const CustomerTable = () => {
     return (
         <section>
             <div>
-                <div className="overflow-x-auto bg-white p-4 shadow-md sm:rounded-t-lg">
+                <div className="overflow-x- space-y-4 bg-white p-4 shadow-md sm:rounded-t-lg">
+                    <h1 className='text-black font-bold mb-8'>
+                        Transaction
+                    </h1>
+                    <div className='flex justify-between'>
 
+                        <div className='space-x-4'>
+                            <select
+                                name="year"
+                                id="year"
+                                // value={}
+                                // onChange={}
+                                defaultValue=""
+                                className="text-[1rem] text-[#899A9A] p-3 border-2 border-[#B8C9C9] rounded-lg font-bold">
+                                <option value="">Start Date</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+
+                            <select
+                                name="year"
+                                id="year"
+                                // value={}
+                                // onChange={}
+                                defaultValue=""
+                                className="text-[1rem] text-[#899A9A] p-3 border-2 border-[#B8C9C9] rounded-lg font-bold">
+                                <option value="">End Date</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+
+                            <select
+                                name="year"
+                                id="year"
+                                // value={}
+                                // onChange={}
+                                defaultValue=""
+                                className="text-[1rem] text-[#899A9A] p-3 border-2 border-[#B8C9C9] rounded-lg font-bold">
+                                <option value="">Amount</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
+
+                        <button className='flex gap-2 text-[1rem] text-[#202430] p-3 border-2 border-[#B8C9C9] rounded-lg font-bold'>
+                            <BsFilter className='h-5 w-5' />
+                            filter
+                        </button>
+
+                    </div>
 
                     <div className="overflow-x-auto">
                         <table className="w-full table-auto text-sm text-left text-[#181336] dark:text-gray-400">
                             {/* Table header */}
-                            <thead className="text-xs text-gray-700 bg-gray-300 dark:bg-gray-700 dark:text-gray-400">
+                            <thead className="text-xs text-[#7C8493] bg-[#EEF2F7] dark:bg-[#EEF2F7] dark:text-gray-400">
                                 <tr>
                                     <th scope="col" className="px-6 py-3 text-[0.825rem]">
                                         Date
