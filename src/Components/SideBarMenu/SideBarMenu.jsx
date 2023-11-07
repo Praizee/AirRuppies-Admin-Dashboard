@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from '../../Firebase/firebase.js';
 
@@ -49,7 +49,12 @@ export function SidebarWithSearch({ showSidebar }) {
                     <FaCircleUser size={60} />
                 </div> */}
 
-                <Link to="dashboard">
+                <NavLink to="dashboard"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     {/* to="/" */}
                     <ListItem className="py-2">
                         <ListItemPrefix>
@@ -59,9 +64,14 @@ export function SidebarWithSearch({ showSidebar }) {
                             Dashboard
                         </p>
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="transactions">
+                <NavLink to="transactions"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <Accordion
                         icon={
                             <ChevronRightIcon strokeWidth={2.5} className="mx-auto h-4 w-4" />
@@ -78,9 +88,14 @@ export function SidebarWithSearch({ showSidebar }) {
                             </AccordionHeader>
                         </ListItem>
                     </Accordion>
-                </Link>
+                </NavLink>
 
-                <Link to="savings">
+                <NavLink to="savings"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             <GiPayMoney className="h-5 w-5" />
@@ -89,9 +104,14 @@ export function SidebarWithSearch({ showSidebar }) {
                             Savings
                         </p>
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="cards">
+                <NavLink to="cards"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             <FiCreditCard className="h-5 w-5" />
@@ -100,9 +120,14 @@ export function SidebarWithSearch({ showSidebar }) {
                             Cards
                         </p>
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="account">
+                <NavLink to="account"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             <RiAccountBoxFill className="h-5 w-5" />
@@ -111,9 +136,14 @@ export function SidebarWithSearch({ showSidebar }) {
                             Account
                         </p>
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="customers">
+                <NavLink to="customers"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             <IoIosPeople className="h-5 w-5" />
@@ -122,9 +152,14 @@ export function SidebarWithSearch({ showSidebar }) {
                             Customers
                         </p>
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="bill-payment">
+                <NavLink to="bill-payment"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <Accordion
                         icon={
                             <ChevronRightIcon strokeWidth={2.5} className="mx-auto h-4 w-4" />
@@ -141,45 +176,70 @@ export function SidebarWithSearch({ showSidebar }) {
                             </AccordionHeader>
                         </ListItem>
                     </Accordion>
-                </Link>
+                </NavLink>
 
-                <Link to="admin">
+                <NavLink to="admin"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             <RiAdminLine className="h-5 w-5" />
                         </ListItemPrefix>
                         Admin
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="roles">
+                <NavLink to="roles"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             <PiClipboardText className="h-5 w-5" />
                         </ListItemPrefix>
                         Roles
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="permissions">
+                <NavLink to="permissions"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             <BiUserCheck className="h-5 w-5" />
                         </ListItemPrefix>
                         Permissions
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="/profile">
+                <NavLink to="/profile"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             <RxAvatar className="h-5 w-5" />
                         </ListItemPrefix>
                         Profile
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="settings">
+                <NavLink to="settings"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             {/* <Cog6ToothIcon className="h-5 w-5" /> */}
@@ -187,18 +247,28 @@ export function SidebarWithSearch({ showSidebar }) {
                         </ListItemPrefix>
                         Settings
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="ads">
+                <NavLink to="ads"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             <RiAdvertisementFill className="h-5 w-5" />
                         </ListItemPrefix>
                         ADS
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="promotions">
+                <NavLink to="promotions"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             <GoMegaphone className="h-5 w-5" />
@@ -207,9 +277,14 @@ export function SidebarWithSearch({ showSidebar }) {
                             Promotion
                         </p>
                     </ListItem>
-                </Link>
+                </NavLink>
 
-                <Link to="ota-update">
+                <NavLink to="ota-update"
+                    className={({ isActive }) =>
+                        isActive
+                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                            : 'bg-transparent'
+                    }>
                     <ListItem className="py-2">
                         <ListItemPrefix>
                             <BiCrown className="h-5 w-5" />
@@ -218,13 +293,13 @@ export function SidebarWithSearch({ showSidebar }) {
                             OTA Update
                         </p>
                     </ListItem>
-                </Link>
+                </NavLink>
 
                 <Link to="">
                     <ListItem className="py-2" onClick={handleLogout}>
                         <ListItemPrefix>
                             {/* <PowerIcon className="h-5 w-5" /> */}
-                            <LuLogOut className="h-5 w-5" />
+                            <LuLogOut className="h-5 w-5 transform scale-x-[-1]" />
                         </ListItemPrefix>
                         Log Out
                     </ListItem>
