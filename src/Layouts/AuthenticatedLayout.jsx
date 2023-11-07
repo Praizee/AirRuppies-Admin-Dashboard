@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
-import ScrollButton from '../Components/ScrollToTop/ScrollToTop';
 import Navbar from '../Components/Navbar/Navbar';
 import { SidebarWithSearch } from '../Components/SideBarMenu/SideBarMenu';
 
@@ -71,7 +70,6 @@ const AuthenticatedLayout = () => {
           </main>
         </div>
 
-        <ScrollButton />
       </div>
     </section>
   );
