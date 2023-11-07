@@ -136,29 +136,30 @@ const NotificationsTab = () => {
                         </table>
                     </div>
 
-                    <div className='mt-6'>
+                    <div className='mt-6 grid grid-cols-6 gap-6'>
                         <div className='col-span-6 sm:col-span-3 space-y-4'>
                             <label className='text-[#32475C99] font-semibold'>
                                 When should we send you notifications?
                             </label>
                             <select name="notifications" id="notifications"
-                                className='block text-base rounded-lg'>
+                                className='block w-full text-base rounded-lg'>
                                 <option value="online-only">Only when I'm online</option>
                                 <option value="online-and-offline">Online and offline</option>
                             </select>
                         </div>
-
-                        <span className='sm:flex mt-4 sm:items-center sm:gap-4'>
-                            <button type='submit'
-                                className=" px-4 py-3 uppercase rounded-md border border-[#3C1450] bg-[#3C1450] text-sm font-medium text-white transition hover:bg-transparent hover:text-[#3C1450] focus:outline-none focus:ring active:text-[#3C1450]">
-                                Save Changes
-                            </button>
-                            <button type='reset'
-                                className=" px-4 py-3 uppercase rounded-md border border-[#8592A3] bg-white text-sm font-medium text-[#8592A3] transition hover:border-[#3C1450] hover:text-[#3C1450] focus:outline-none focus:ring active:text-[#3C1450]">
-                                Cancel
-                            </button>
-                        </span>
                     </div>
+
+                    <span className='flex mt-4 sm:items-center gap-4'>
+                        <button type='submit'
+                            className=" px-4 py-3 uppercase rounded-md border border-[#3C1450] bg-[#3C1450] text-sm font-medium text-white transition hover:bg-transparent hover:text-[#3C1450] focus:outline-none focus:ring active:text-[#3C1450]">
+                            Save Changes
+                        </button>
+                        <button type='reset'
+                            className=" px-4 py-3 uppercase rounded-md border border-[#8592A3] bg-white text-sm font-medium text-[#8592A3] transition hover:border-[#3C1450] hover:text-[#3C1450] focus:outline-none focus:ring active:text-[#3C1450]">
+                            Cancel
+                        </button>
+                    </span>
+
 
 
                 </div>

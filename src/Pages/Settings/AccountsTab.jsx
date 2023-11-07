@@ -47,7 +47,7 @@ const AccountsTab = () => {
                                 <input
                                     type="text"
                                     id="firstName"
-                                    defaultValue={user.firstName}
+                                    // defaultValue={user.firstName}
                                     className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                     placeholder="First Name"
                                 />
@@ -73,7 +73,7 @@ const AccountsTab = () => {
                                 <input
                                     type="text"
                                     id="lastName"
-                                    defaultValue={user.lastName}
+                                    // defaultValue={user.lastName}
                                     className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                     placeholder="Last Name"
                                 />
@@ -99,7 +99,7 @@ const AccountsTab = () => {
                                 <input
                                     type="email"
                                     id="email"
-                                    defaultValue={user.email}
+                                    // defaultValue={user.email}
                                     className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                     placeholder="Email"
                                     required

@@ -162,8 +162,8 @@ const SecurityTab = () => {
                     Authorization pin change
                 </h1>
 
-                <div className='flex justify-betwee'>
-                    <div className='space-y-4 w-full'>
+                <div className='flex mt- justify-betwee'>
+                    <div className='space-y-4 mt-12 w-full'>
                         <label
                             htmlFor="currentPin"
                             className="relative block rounded-md border
@@ -216,7 +216,7 @@ const SecurityTab = () => {
                         </button>
                     </div>
 
-                    <img src={GirlIllustration} className='hidden tablet:block laptop:px-20 tablet:px-8' alt='girl-illustration' />
+                    <img src={GirlIllustration} className='hidden laptop:block laptop:px-20 tablet:px-8' alt='girl-illustration' />
                 </div>
 
             </div>

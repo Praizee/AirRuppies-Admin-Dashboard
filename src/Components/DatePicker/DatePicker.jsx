@@ -19,9 +19,9 @@ const customWeekStartEndFormat = (value) =>
 const BasicDatePicker = () => (
     <Space direction="vertical" size={12}>
         <DatePicker defaultValue={dayjs('01/01/2023', dateFormatList[0])} format={dateFormatList}
-            className='relative p-2 block rounded-md border border-gray-200 
-            shadow-sm focus-within:border-blue-600 
-            focus-within:ring-1 focus-within:ring-blue-600'
+            className='p-2 rounded-md border-gray-200 
+            shadow-sm focus-within:border-[#551B73] hover:border-[#551B73] 
+            focus-within:ring-1 focus-within:ring-[#551B73]'
         />
     </Space>
 );
