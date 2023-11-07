@@ -159,7 +159,7 @@ const Navbar = ({ toggleSidebar }) => {
                 <img src={Avatar} alt="User-pic" className="" title="Profile" /> {/* User profile picture */}
                 <span>
                   <span className="block text-sm font-bold">
-                    John Doe
+                    {user.firstName} {user.lastName}
                   </span>
                   <span className="block truncate text-sm font-medium">
                     Admin

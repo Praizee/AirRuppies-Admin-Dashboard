@@ -9,6 +9,8 @@ import Avatar from "../../assets/Settings-Avatar.png";
 import BasicDatePicker from '../../Components/DatePicker/DatePicker';
 
 const AccountsTab = () => {
+    const { user, setUser } = useAppContext(); // Use the user state from the context
+
     return (
         <section>
             <div className='bg-white my-8 px-4 py-8 tablet:p-6 rounded-lg shadow-lg'>
@@ -45,6 +47,7 @@ const AccountsTab = () => {
                                 <input
                                     type="text"
                                     id="firstName"
+                                    defaultValue={user.firstName}
                                     className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                     placeholder="First Name"
                                 />
@@ -70,6 +73,7 @@ const AccountsTab = () => {
                                 <input
                                     type="text"
                                     id="lastName"
+                                    defaultValue={user.lastName}
                                     className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                     placeholder="Last Name"
                                 />
@@ -95,6 +99,7 @@ const AccountsTab = () => {
                                 <input
                                     type="email"
                                     id="email"
+                                    defaultValue={user.email}
                                     className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                     placeholder="Email"
                                     required
@@ -146,6 +151,7 @@ const AccountsTab = () => {
                                 <input
                                     type="text"
                                     id="nationality"
+                                    defaultValue="Nigerian"
                                     className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                     placeholder="Nationality"
                                 />
@@ -175,6 +181,8 @@ const AccountsTab = () => {
                                 <input
                                     type="text"
                                     id="roles"
+                                    defaultValue="Super Admin"
+                                    disabled
                                     className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                     placeholder="Roles"
                                 />

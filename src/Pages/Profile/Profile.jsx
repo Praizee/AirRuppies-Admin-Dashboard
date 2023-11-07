@@ -31,7 +31,7 @@ const Profile = () => {
                         <span className='w-full'>
                             <span className=''>
                                 <h1 className='text-[1.5rem] font-black'>
-                                    John Doe
+                                    {user.firstName} {user.lastName}
                                 </h1>
                             </span>
 
@@ -74,7 +74,7 @@ const Profile = () => {
                         <span className='space-y-2'>
                             <p className='flex gap-2'>
                                 <BiUser className='w-5 h-5' />
-                                <b>Full Name: </b> John Doe
+                                <b>Full Name: </b> {user && user.firstName ? user.firstName : 'Super'} {user && user.lastName ? user.lastName : 'Admin'}
                             </p>
                             <p className='flex gap-2'>
                                 <BsCheckLg className='w-5 h-5' />
@@ -100,7 +100,7 @@ const Profile = () => {
                             </p>
                             <p className='flex gap-2'>
                                 <BiEnvelope className='w-5 h-5' />
-                                <b>Email: </b> John.doe@example.com
+                                <b>Email: </b> {user.email}
                             </p>
                         </span>
                     </div>
