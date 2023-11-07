@@ -1,17 +1,28 @@
-import * as React from 'react';
-import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import React from 'react';
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+import { DatePicker, Space } from 'antd';
+dayjs.extend(customParseFormat);
+const { RangePicker } = DatePicker;
+const dateFormat = 'YYYY/MM/DD';
+const weekFormat = 'MM/DD';
+const monthFormat = 'YYYY/MM';
 
-const BasicDatePicker = () => {
-    return (
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DemoContainer components={['DatePicker']}>
-                <DatePicker label="Basic date picker" />
-            </DemoContainer>
-        </LocalizationProvider>
-    )
-}
+/** Manually entering any of the following formats will perform date parsing */
+const dateFormatList = ['DD/MM/YYYY', 'DD/MM/YY', 'DD-MM-YYYY', 'DD-MM-YY'];
+const customFormat = (value) => `custom format: ${value.format(dateFormat)}`;
+const customWeekStartEndFormat = (value) =>
+    `${dayjs(value).startOf('week').format(weekFormat)} ~ ${dayjs(value)
+        .endOf('week')
+        .format(weekFormat)}`;
 
-export default BasicDatePicker
+const BasicDatePicker = () => (
+    <Space direction="vertical" size={12}>
+        <DatePicker defaultValue={dayjs('01/01/2023', dateFormatList[0])} format={dateFormatList}
+            className='relative p-2 block rounded-md border border-gray-200 
+            shadow-sm focus-within:border-blue-600 
+            focus-within:ring-1 focus-within:ring-blue-600'
+        />
+    </Space>
+);
+export default BasicDatePicker;
