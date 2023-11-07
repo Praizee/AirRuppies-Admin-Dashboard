@@ -2,7 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { BiUser } from "react-icons/bi";
+import { BiUser, BiLock, BiBell, BiLink } from "react-icons/bi";
 import AccountsTab from '../../Pages/Settings/AccountsTab';
 import SecurityTab from '../../Pages/Settings/SecurityTab';
 import NotificationsTab from '../../Pages/Settings/NotificationsTab';
@@ -63,32 +63,32 @@ export default function SettingsTabs() {
                 </Tab>
                 <Tab selectedClassName="bg-[#3C1450] text-white rounded-t-lg border">
                     <span className='flex gap-2 uppercase text-[0.875rem]'>
-                        <BiUser className='h-4 w-4 mt-1' /> Security
+                        <BiLock className='h-4 w-4 mt-1' /> Security
                     </span>
                 </Tab>
                 <Tab selectedClassName="bg-[#3C1450] text-white rounded-t-lg border">
                     <span className='flex gap-2 uppercase text-[0.875rem]'>
-                        <BiUser className='h-4 w-4 mt-1' /> Notification
+                        <BiBell className='h-4 w-4 mt-1' /> Notification
                     </span>
                 </Tab>
                 <Tab selectedClassName="bg-[#3C1450] text-white rounded-t-lg border">
                     <span className='flex gap-2 uppercase text-[0.875rem]'>
-                        <BiUser className='h-4 w-4 mt-1' /> Maintenance Mode
+                        <BiLink className='h-4 w-4 mt-1' /> Maintenance Mode
                     </span>
                 </Tab>
                 <Tab selectedClassName="bg-[#3C1450] text-white rounded-t-lg border">
                     <span className='flex gap-2 uppercase text-[0.875rem]'>
-                        <BiUser className='h-4 w-4 mt-1' /> Miscellaneous
+                        <BiLink className='h-4 w-4 mt-1' /> Miscellaneous
                     </span>
                 </Tab>
                 <Tab selectedClassName="bg-[#3C1450] text-white rounded-t-lg border">
                     <span className='flex gap-2 uppercase text-[0.875rem]'>
-                        <BiUser className='h-4 w-4 mt-1' /> Tier
+                        <BiLink className='h-4 w-4 mt-1' /> Tier
                     </span>
                 </Tab>
                 <Tab selectedClassName="bg-[#3C1450] text-white rounded-t-lg border">
                     <span className='flex gap-2 uppercase text-[0.875rem]'>
-                        <BiUser className='h-4 w-4 mt-1' /> Charges
+                        <BiLink className='h-4 w-4 mt-1' /> Charges
                     </span>
                 </Tab>
             </TabList>
