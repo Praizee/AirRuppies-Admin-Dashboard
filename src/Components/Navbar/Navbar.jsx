@@ -1,14 +1,35 @@
 import React from "react";
-import { FiMenu } from "react-icons/fi";
-import { LuBell, LuSun, LuMoon } from "react-icons/lu";
-import { GoSearch } from "react-icons/go";
+import { Link, useNavigate } from "react-router-dom";
+import { useAppContext } from "../../Context/AppContext";
+import { signOut } from "firebase/auth";
+import { auth } from '../../Firebase/firebase.js';
+import { Dropdown } from 'flowbite-react';
 import Avatar from "../../assets/Avatar.png";
 import AppLogo from "../../assets/App Logo.png";
-import { useAppContext } from "../../Context/AppContext";
+
+import { FiMenu } from "react-icons/fi";
+import { LuBell, LuSun, LuMoon, LuLogOut } from "react-icons/lu";
+import { GoSearch } from "react-icons/go";
+import { IoSettingsOutline } from "react-icons/io5";
+import { HiCog, HiLogout, HiViewGrid } from 'react-icons/hi';
+import { BiUser } from "react-icons/bi";
+
 
 
 const Navbar = ({ toggleSidebar }) => {
   const { user } = useAppContext(); // Use the user state from the context
+  const navigate = useNavigate();
+  // logout
+  const handleLogout = () => {
+    signOut(auth).then(() => {
+      // Sign-out successful.
+      navigate("/");
+      console.log("Signed out successfully")
+    }).catch((error) => {
+      // An error happened.
+    });
+  }
+  // end of logout
 
   return (
     <div className="navbar bg-white border-2 border-t-transparent fixed py-4 top-0 z-[100]">
@@ -60,24 +81,104 @@ const Navbar = ({ toggleSidebar }) => {
           </button>
         </div>
 
-        <button className="btn btn-ghost btn-circle" title="Notifications">
-          <div className="indicator">
-            <LuBell size={23} /> {/* Bell icon */}
-            <span className="badge badge-xs bg-[#FF3E1D] py-1 text-[0.625rem] text-white indicator-item">
-
+        {/* notification dropdown */}
+        <Dropdown
+          className="mt-2 right-0 text-[#32475CDE] w-[20rem]"
+          label="" dismissOnClick={false} renderTrigger={() =>
+            <button className="btn btn-ghost btn-circle" title="Notifications">
+              <div className="indicator">
+                <LuBell size={23} /> {/* Bell icon */}
+                <span className="badge badge-xs bg-[#FF3E1D] py-1 text-[0.625rem] text-white indicator-item">
+                </span>
+              </div>
+            </button>
+          }>
+          <Dropdown.Item className="flex justify-between">
+            <p className="font-bold">
+              Notifications
+            </p>
+            <p className="text-[#696CFF] bg-[#666CFF1F]/10 px-2 py-1 rounded-lg">
+              8 New
+            </p>
+          </Dropdown.Item>
+          <Dropdown.Divider />
+          <Dropdown.Item className="inline-block">
+            <p className="font-bold text-left">
+              Congratulations
+            </p>
+            <span className="flex mt-2 justify-between">
+              <p className="text-[0.75rem]">
+                A new customer just onboarding on app
+              </p>
+              <p className="text-[0.75rem]">
+                Today
+              </p>
             </span>
-          </div>
-        </button>
+          </Dropdown.Item>
+          <Dropdown.Divider />
+          <Dropdown.Item className="inline-block">
+            <p className="font-bold text-left">
+              New user registered.
+            </p>
+            <span className="flex mt-2 justify-between">
+              <p className="text-[0.75rem]">
+                5 hours ago
+              </p>
+              <p className="text-[0.75rem]">
+                Yesterday
+              </p>
+            </span>
+          </Dropdown.Item>
+          <Dropdown.Divider />
+          <Dropdown.Item className="inline-block">
+            <p className="font-bold text-left">
+              New message received 👋
+            </p>
+            <span className="flex mt-2 justify-between">
+              <p className="text-[0.75rem]">
+                You have 10 unread messages
+              </p>
+              <p className="text-[0.75rem]">
+                11 Aug
+              </p>
+            </span>
+          </Dropdown.Item>
+        </Dropdown>
 
-        <div className="">
+        {/* profile picture dropdown */}
+        <div className="text-[#32475CDE]">
           <span className="hidden md:flex mx-4 gap-2 justify-between">
-            <span className="py-1">
-              <img src={Avatar} alt="User-pic" className="" title="Profile" /> {/* User profile picture */}
-            </span>
+            <Dropdown
+              className="mt-2 right-0 select-none"
+              label="" dismissOnClick={false} renderTrigger={() =>
+                <span className="py-1">
+                  <img src={Avatar} alt="User-pic" className="select-none" title="Profile" /> {/* User profile picture */}
+                </span>
+              }>
+              <Dropdown.Header className="flex gap-4">
+                <img src={Avatar} alt="User-pic" className="" title="Profile" /> {/* User profile picture */}
+                <span>
+                  <span className="block text-sm font-bold">
+                    John Doe
+                  </span>
+                  <span className="block truncate text-sm font-medium">
+                    Admin
+                  </span>
+                </span>
+              </Dropdown.Header>
+              <Link to="profile">
+                <Dropdown.Item icon={BiUser}>Profile</Dropdown.Item>
+              </Link>
+              <Link to="settings">
+                <Dropdown.Item icon={IoSettingsOutline}>Settings</Dropdown.Item>
+              </Link>
+              <Dropdown.Divider />
+              <Dropdown.Item onClick={handleLogout} icon={LuLogOut}>Logout</Dropdown.Item>
+            </Dropdown>
           </span>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 
