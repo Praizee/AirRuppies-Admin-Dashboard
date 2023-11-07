@@ -8,7 +8,7 @@ const Footer = () => {
                     Made with 💙 by &nbsp;
                     <a href='https://stephen-adeniji.netlify.app/'
                         title='Stephen Adeniji'
-                        className='link link-hover text-blue-700'>
+                        className='link link-hover text-[#3C1450]'>
                         Stephen Adeniji
                     </a>
                 </p>
