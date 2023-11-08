@@ -5,15 +5,33 @@ import { getDatabase, ref, set } from 'firebase/database';
 
 import { Spinner } from "@material-tailwind/react";
 import Alerts from "../../Components/Alerts/Alerts.jsx";
+import TimeLine from '../../Components/Timeline/TimeLine';
+import RecentDevices from '../../Components/RecentDevices/RecentDevices';
 
 const MiscellaneousTab = () => {
     return (
-        <div className='bg-white my-8 px-4 py-8 tablet:p-6 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
-            <h1 className="text-[2rem] text-center mt-4 mb-2 text-[#2E2E3A] leading-normal font-bold">
-                Settings
-            </h1>
+        <section>
+            <div className='bg-white my-8 px-4 py-8 text-[#32475CDE] p-6 rounded-lg shadow-lg'>
 
-        </div>
+                <h1 className='font-black text-[1.25rem] mb-6'>
+                    Admin Activity Timeline
+                </h1>
+
+                <TimeLine />
+            </div>
+
+            <div className='bg-white my- text-[#32475CDE] rounded-lg shadow-lg'>
+
+                <span className='px-4 py-8'>
+                    <h1 className='font-black px-6 py-2 text-[1.25rem]'>
+                        Recent Devices
+                    </h1>
+                </span>
+
+                <RecentDevices />
+            </div>
+
+        </section>
     )
 }
 
