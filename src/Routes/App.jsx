@@ -26,6 +26,8 @@ import NotFoundPage from "../Pages/404 Page/NotFoundPage";
 import UnderMaintenance from "../Pages/UnderMaintenancePage/UnderMaintenance";
 import NotAuthorized from "../Pages/NotAuthorizedPage/NotAuthorized";
 import ServerError from "../Pages/ServerErrorPage/ServerError";
+import CardDetails from "../Pages/Cards/CardDetails";
+import AccountsDetails from "../Pages/Account/AccountsDetails";
 
 export default function App() {
 
@@ -44,7 +46,9 @@ export default function App() {
         <Route path="transactions" element={<AuthRoute><Transactions /></AuthRoute>} />
         <Route path="savings" element={<AuthRoute><Savings /></AuthRoute>} />
         <Route path="cards" element={<AuthRoute><Cards /></AuthRoute>} />
+        <Route path="card-details" element={<AuthRoute><CardDetails /></AuthRoute>} />
         <Route path="account" element={<AuthRoute><Account /></AuthRoute>} />
+        <Route path="account-details" element={<AuthRoute><AccountsDetails /></AuthRoute>} />
         <Route path="customers" element={<AuthRoute><Customers /></AuthRoute>} />
         <Route path="bill-payment" element={<AuthRoute><BillPayment /></AuthRoute>} />
         <Route path="admin" element={<AuthRoute><Admin /></AuthRoute>} />
