@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import "./styles.css"
 import PageNotFound from "../../../src/assets/404-page-not-found.png"
 
 const NotFoundPage = () => {
@@ -18,7 +17,7 @@ const NotFoundPage = () => {
 
                     <img src={PageNotFound} className='w-[90%] mx-auto' />
 
-                    <Link to="/" className="btn mt-10 text-white hover:bg-[#010886] normal-case font-medium border-none bg-[#010886]/90 ">Go Back Home</Link>
+                    <Link to="/" className="btn mt-10 text-white hover:bg-[#3C1450] normal-case font-medium border-none bg-[#3C1450]/90 ">Go Back Home</Link>
 
                 </div>
             </div>
