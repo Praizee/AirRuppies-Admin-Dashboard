@@ -8,7 +8,7 @@ import {
     Typography,
     Input,
 } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import BasicDatePicker from '../../Components/DatePicker/DatePicker';
 
 export function AddAdminModal() {
     const [open, setOpen] = React.useState(false);
@@ -25,7 +25,7 @@ export function AddAdminModal() {
             <Dialog open={open} handler={handleOpen}>
                 <div className="text-right">
                     <button onClick={handleOpen} title="Close">
-                        <h1 className="text-2xl p px-2 font-bold">
+                        <h1 className="laptop:text-lg text-2xl px-4 laptop:px-2 py-2 laptop:py-0  font-bold">
                             X
                         </h1>
                     </button>
@@ -33,7 +33,7 @@ export function AddAdminModal() {
                 <DialogHeader className="py-0 px-6">
                     <span className=''>
                         <h1 className="text-[1.5rem] text-[#242F57] leading-normal font-bold">
-                            Admin
+                            Add Admin
                         </h1>
                         <p className='text-[#636E95] font-medium'>
                             This information can be created and edited
@@ -43,28 +43,28 @@ export function AddAdminModal() {
 
                 <hr className="my-4" />
 
-                <DialogBody className="h-[42rem] overflow-scroll">
+                <DialogBody className="h-[42rem] mt- overflow-scroll">
                     <Typography>
-                        <form className=" rounded-lg grid grid-cols-6 px-2 space-y-1">
+                        <form className=" rounded-lg grid grid-cols-6 px-2 space-y-2">
 
                             <div className="col-span-6 ">
-                                <label htmlFor="Email" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="Email" className="block laptop:text-xs text-sm font-medium text-gray-700">
                                     Name
                                 </label>
 
                                 <input
-                                    type="email"
-                                    id="Email"
+                                    type="text"
+                                    id="name"
                                     placeholder="Name"
                                     defaultValue="Tope Hope"
                                     required
                                     autoFocus
-                                    className="input mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                    className="input w-full mt-1 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                                 />
                             </div>
 
                             <div className="col-span-6 ">
-                                <label htmlFor="Email" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="Email" className="block laptop:text-xs text-sm font-medium text-gray-700">
                                     Email Address
                                 </label>
 
@@ -75,25 +75,22 @@ export function AddAdminModal() {
                                     defaultValue="temi@gmail"
                                     required
                                     autoFocus
-                                    className="input mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                    className="input w-full mt-1 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                                 />
                             </div>
                             <div className="col-span-6 ">
-                                <label htmlFor="Email" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="Email" className="block laptop:text-xs text-sm font-medium text-gray-700">
                                     Select Role
                                 </label>
-
-                                <input
-                                    type="email"
-                                    id="Email"
-                                    placeholder="Email address"
-                                    required
-                                    autoFocus
-                                    className="input mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-                                />
+                                <select name="notifications" id="notifications"
+                                    defaultValue="admin"
+                                    className="input w-full mt-1 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm">
+                                    <option value="admin">Admin</option>
+                                    <option value="super-admin">Super Admin</option>
+                                </select>
                             </div>
                             <div className="col-span-6 ">
-                                <label htmlFor="Email" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="Email" className="block laptop:text-xs text-sm font-medium text-gray-700">
                                     Phone Number
                                 </label>
 
@@ -104,42 +101,36 @@ export function AddAdminModal() {
                                     defaultValue="089282819292"
                                     required
                                     autoFocus
-                                    className="input mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                    className="input w-full mt-1 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                                 />
                             </div>
                             <div className="col-span-6 ">
-                                <label htmlFor="Email" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="Email" className="block laptop:text-xs text-sm font-medium text-gray-700">
                                     Nationality
                                 </label>
                                 {/* <Input label="Nationality" size="lg" /> */}
-                                <input
-                                    type="email"
-                                    id="Email"
-                                    placeholder="Nationality"
-                                    required
-                                    autoFocus
-                                    className="input mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-                                />
+                                <select name="notifications" id="notifications"
+                                    defaultValue="nigerian"
+                                    className="input w-full mt-1 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm">
+                                    <option value="nigerian">Nigerian</option>
+                                    <option value="non-nigerian">Non-Nigerian</option>
+                                </select>
                             </div>
                             <div className="col-span-6 ">
-                                <label htmlFor="Email" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="Email" className="block laptop:text-xs text-sm font-medium text-gray-700">
                                     Date of birth
                                 </label>
 
-                                <input
-                                    type="email"
-                                    id="Email"
-                                    placeholder="Date of birth"
-                                    defaultValue="mm-dd-yyyy"
-                                    required
-                                    autoFocus
-                                    className="input mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-                                />
+
+                                <div className="">
+                                    <BasicDatePicker />
+                                </div>
+
                             </div>
 
-                            <div className="col-span-6 ">
+                            <div className="col-span-6">
                                 <button
-                                    className=" w-full rounded-md border border-[#3C1450] bg-[#3C1450] p-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-[#3C1450] focus:outline-none focus:ring active:text-blue-500"
+                                    className=" w-full mt-6 laptop:mt-2 rounded-md border border-[#3C1450] bg-[#3C1450] p-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-[#3C1450] focus:outline-none focus:ring active:text-blue-500"
                                 >Submit
                                 </button>
                             </div>
@@ -147,7 +138,7 @@ export function AddAdminModal() {
                     </Typography>
 
                 </DialogBody>
-            </Dialog>
+            </Dialog >
         </>
     );
 }
