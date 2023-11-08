@@ -23,6 +23,9 @@ import Ads from "../Pages/Ads/Ads";
 import Promotions from "../Pages/Promotions/Promotions";
 import OTAUpdate from "../Pages/OTAUpdate/OTAUpdate";
 import NotFoundPage from "../Pages/404 Page/NotFoundPage";
+import UnderMaintenance from "../Pages/UnderMaintenancePage/UnderMaintenance";
+import NotAuthorized from "../Pages/NotAuthorizedPage/NotAuthorized";
+import ServerError from "../Pages/ServerErrorPage/ServerError";
 
 export default function App() {
 
@@ -55,6 +58,9 @@ export default function App() {
       </Route>
       {/* This is the catch-all route */}
       <Route path="*" element={<NotFoundPage />} />
+      <Route path="under-maintenance" element={<UnderMaintenance />} />
+      <Route path="unauthorized" element={<NotAuthorized />} />
+      <Route path="server-error" element={<ServerError />} />
     </Routes>
   )
 
