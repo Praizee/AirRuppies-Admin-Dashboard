@@ -11,7 +11,6 @@ import { FiMenu } from "react-icons/fi";
 import { LuBell, LuSun, LuMoon, LuLogOut } from "react-icons/lu";
 import { GoSearch } from "react-icons/go";
 import { IoSettingsOutline } from "react-icons/io5";
-import { HiCog, HiLogout, HiViewGrid } from 'react-icons/hi';
 import { BiUser } from "react-icons/bi";
 
 
