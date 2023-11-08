@@ -14,7 +14,7 @@ const AuthRoute = ({ children }) => {
                 setLoading(false);
             } else {
                 // User is not authenticated, redirect to the login page
-                navigate('/');
+                navigate('/unauthorized');
             }
         });
 
