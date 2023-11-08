@@ -197,3 +197,201 @@ export const AdminTableData = [
         status: "Inactive",
     },
 ]
+
+export const CardTableData = [
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Virtual Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Prepaid Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Physical Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Virtual Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Prepaid Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Physical Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Virtual Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Prepaid Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Physical Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Virtual Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Prepaid Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Physical Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Virtual Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Prepaid Card",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        type: "Physical Card",
+    },
+]
+
+export const CardDetailsData = [
+    {
+        title: "Mr",
+        surname: "Bond",
+        firstname: "James",
+        othernames: "Joseph",
+        gender: "Male",
+        phonenumber: "0806xxxxx250",
+        emailaddress: "yourmail@gmail.com",
+        dateofbirth: "31-01-1992",
+    },
+]
+export const AccountsTableData = [
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+]
