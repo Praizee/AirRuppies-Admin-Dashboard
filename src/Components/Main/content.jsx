@@ -73,3 +73,127 @@ export const CustomerTableData = [
 
 
 ]
+
+
+export const AdminTableData = [
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Inactive",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Inactive",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Inactive",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Active",
+    },
+    {
+        fullname: "Tope hope",
+        roles: "Operation Manager",
+        lastActive: "24 July 2021",
+        status: "Inactive",
+    },
+]
