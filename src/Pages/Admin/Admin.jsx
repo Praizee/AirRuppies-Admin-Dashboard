@@ -8,9 +8,9 @@ import { AdminTable } from './AdminTable';
 const Admin = () => {
     return (
         <section>
-            <div className="container pt-20 pb-0">
+            <div className="container pt-12 pb-0">
                 <span className=''>
-                    <h1 className="text-[2rem] mt-4 mb- text-[#2E2E3A] leading-normal font-bold">
+                    <h1 className="text-[1.5rem] mt-4 text-[#2E2E3A] leading-normal font-bold">
                         Admin
                     </h1>
                     <p className='text-[#32475C99] font-semibold'>
