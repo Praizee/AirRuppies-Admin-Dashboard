@@ -26,8 +26,8 @@ export const CustomerTable = () => {
             <a
                 key={i}
                 onClick={() => handlePageChange(i)}
-                className={`px-3 py-2 rounded-lg cursor-pointer text-black ${currentPage === i ?
-                    'bg-blue-400 text-white' :
+                className={`px-3 py-1 rounded-lg cursor-pointer text-black ${currentPage === i ?
+                    'bg-[#3C1450] text-white' :
                     'bg-white'}`}
             >
                 {i}
