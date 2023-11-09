@@ -28,6 +28,9 @@ import NotAuthorized from "../Pages/NotAuthorizedPage/NotAuthorized";
 import ServerError from "../Pages/ServerErrorPage/ServerError";
 import CardDetails from "../Pages/Cards/CardDetails";
 import AccountsDetails from "../Pages/Account/AccountsDetails";
+import PromotionDetails from "../Pages/Promotions/PromotionDetails";
+import AdsDetails from "../Pages/Ads/AdsDetails";
+import SavingsDetails from "../Pages/Savings/SavingsDetails";
 
 export default function App() {
 
@@ -45,6 +48,7 @@ export default function App() {
         <Route path="dashboard" element={<AuthRoute><Dashboard /></AuthRoute>} />
         <Route path="transactions" element={<AuthRoute><Transactions /></AuthRoute>} />
         <Route path="savings" element={<AuthRoute><Savings /></AuthRoute>} />
+        <Route path="savings-details" element={<AuthRoute><SavingsDetails /></AuthRoute>} />
         <Route path="cards" element={<AuthRoute><Cards /></AuthRoute>} />
         <Route path="card-details" element={<AuthRoute><CardDetails /></AuthRoute>} />
         <Route path="account" element={<AuthRoute><Account /></AuthRoute>} />
@@ -57,7 +61,9 @@ export default function App() {
         <Route path="profile" element={<AuthRoute><Profile /></AuthRoute>} />
         <Route path="settings" element={<AuthRoute><Settings /></AuthRoute>} />
         <Route path="ads" element={<AuthRoute><Ads /></AuthRoute>} />
+        <Route path="ads-details" element={<AuthRoute><AdsDetails /></AuthRoute>} />
         <Route path="promotions" element={<AuthRoute><Promotions /></AuthRoute>} />
+        <Route path="promotion-details" element={<AuthRoute><PromotionDetails /></AuthRoute>} />
         <Route path="ota-update" element={<AuthRoute><OTAUpdate /></AuthRoute>} />
       </Route>
       {/* This is the catch-all route */}
