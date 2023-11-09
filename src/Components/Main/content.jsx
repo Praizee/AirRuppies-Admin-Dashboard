@@ -1,4 +1,4 @@
-
+import Card from "../../assets/Card.png"
 export const CustomerTableData = [
     {
         date: "13 July, 2021",
@@ -303,6 +303,7 @@ export const CardDetailsData = [
         dateofbirth: "31-01-1992",
     },
 ]
+
 export const AccountsTableData = [
     {
         fullname: "John Doe",
@@ -459,5 +460,106 @@ export const PermissionsTableData = [
         name: "Williams Temitope",
         assignedTo: "Manager",
         createdDate: "14 Apr 2021, 8:43 PM",
+    },
+]
+
+
+export const PromotionsTableData = [
+    {
+        title: "Valentine",
+        amount: "1000",
+        status: "Inactive",
+    },
+    {
+        title: "Valentine",
+        amount: "1000",
+        status: "Active",
+    },
+    {
+        title: "Valentine",
+        amount: "1000",
+        status: "Active",
+    },
+    {
+        title: "Valentine",
+        amount: "1000",
+        status: "Inactive",
+    },
+    {
+        title: "Valentine",
+        amount: "1000",
+        status: "Active",
+    },
+    {
+        title: "Valentine",
+        amount: "1000",
+        status: "Active",
+    },
+    {
+        title: "Valentine",
+        amount: "1000",
+        status: "Inactive",
+    },
+    {
+        title: "Valentine",
+        amount: "1000",
+        status: "Active",
+    },
+    {
+        title: "Valentine",
+        amount: "1000",
+        status: "Active",
+    },
+    {
+        title: "Valentine",
+        amount: "1000",
+        status: "Inactive",
+    },
+]
+
+export const PromotionDetailsData = [
+    {
+        title: "Valentine Gift",
+        description: "Gift",
+        amount: "1000",
+        condition: "Valentine",
+        startDate: "02-02-2023 ",
+        endDate: "15-03-2023",
+    },
+]
+
+export const AdsTableData = [
+    {
+        title: "Discount",
+        description: "Discount on all ..",
+        status: "Pending",
+    },
+    {
+        title: "Loans Offer",
+        description: "Loans offer ..",
+        status: "Active",
+    },
+    {
+        title: "Promo promo",
+        description: "Promo on ..",
+        status: "Active",
+    },
+    {
+        title: "Discount",
+        description: "Discount on all ..",
+        status: "Pending",
+    },
+    {
+        title: "Discount",
+        description: "Discount on all ..",
+        status: "Active",
+    },
+]
+
+export const AdsDetailsData = [
+    {
+        title: "Discount",
+        description: "Discount on all our products",
+        image: Card,
     },
 ]
