@@ -8,7 +8,6 @@ import {
     Typography,
     Input,
 } from "@material-tailwind/react";
-import BasicDatePicker from '../../Components/DatePicker/DatePicker';
 
 export function CreatePromotionModal() {
     const [open, setOpen] = React.useState(false);
