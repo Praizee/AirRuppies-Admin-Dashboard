@@ -18,7 +18,8 @@ const Profile = () => {
 
             <div className='bg-white rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
 
-                <img src={ProfileBackground} alt='profile-bg' className='max-h-[15.625rem]' />
+                <img src={ProfileBackground} alt='profile-bg' className='w-full max-h-[15.625rem]' />
+                {/* w-fit */}
 
                 <div className='bg-white px-4 py-3 tablet:px-6 rounded-lg'>
 
