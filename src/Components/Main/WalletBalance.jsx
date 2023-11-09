@@ -5,8 +5,8 @@ const WalletBalance = () => {
     return (
         <section className="">
             <div className="">
-                <div className="border my-4 bg-white shadow-md text-[#32475CDE] p-4 rounded-lg relative">
-                    <div className="flex gap-2">
+                <div className="border my-4 bg-white shadow-md w-max text-[#32475CDE] p-4 rounded-lg relative">
+                    <div className="flex justify-between gap-4">
                         <span className="">
                             <span className="">
                                 <p className="text-[1.25rem] font-black">

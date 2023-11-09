@@ -42,7 +42,7 @@ export const CustomerTable = () => {
                     <h1 className='text-black font-bold mb-8'>
                         Transaction
                     </h1>
-                    <div className='flex justify-between'>
+                    <div className='laptop:flex justify-between gap-4'>
 
                         <div className='space-x-4'>
                             <select
@@ -81,7 +81,7 @@ export const CustomerTable = () => {
                                 // value={}
                                 // onChange={}
                                 defaultValue=""
-                                className="text-[1rem] text-[#899A9A] p-3 border-2 border-[#B8C9C9] rounded-lg font-bold">
+                                className="text-[1rem] text-[#899A9A] p-3 mt-2 border-2 border-[#B8C9C9] rounded-lg font-bold">
                                 <option value="">Amount</option>
                                 <option value="2019">2019</option>
                                 <option value="2020">2020</option>
@@ -91,7 +91,7 @@ export const CustomerTable = () => {
                             </select>
                         </div>
 
-                        <button className='flex gap-2 text-[1rem] text-[#202430] p-3 border-2 border-[#B8C9C9] rounded-lg font-bold'>
+                        <button className='flex gap-2 mt-2 laptop:mt-0 text-[1rem] text-[#202430] p-3 border-2 border-[#B8C9C9] rounded-lg font-bold'>
                             <BsFilter className='h-5 w-5' />
                             filter
                         </button>

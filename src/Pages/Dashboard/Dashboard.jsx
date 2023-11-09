@@ -78,7 +78,7 @@ const Dashboard = () => {
                   {/* <Growth /> */}
                 </div>
                 <div>
-                  <div className="flex justify-between mt-4 laptop:space-y-0 laptop:mt-0">
+                  <div className="flex justify-between gap-4 mt-4 laptop:mt-0">
                     <Income />
                     <Revenue />
                   </div>
