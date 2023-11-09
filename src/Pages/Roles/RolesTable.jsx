@@ -47,7 +47,7 @@ export const RolesTable = () => {
                         <table className="w-full table-auto text-sm text-left text-[#515B6F] dark:text-gray-400">
                             {/* Table header */}
 
-                            <thead className="text-xs text-[#25324B] border-b">
+                            <thead className="text-xs bg-[#FAFAFC] text-[#25324B] border-b">
                                 <tr>
                                     <th scope="col" class="p-4">
                                         <div class="flex items-center">

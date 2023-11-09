@@ -47,7 +47,7 @@ export const PermissionsTable = () => {
                         <table className="w-full table-auto text-sm text-left text-[#515B6F] dark:text-gray-400">
                             {/* Table header */}
 
-                            <thead className="text-xs text-[#25324B] border-b">
+                            <thead className="text-xs text-[#25324B] bg-[#FAFAFC] border-b">
                                 <tr>
                                     <th scope="col" className="px-6 uppercase py-3 text-sm">
                                         Name
