@@ -1,4 +1,5 @@
 import Card from "../../assets/Card.png"
+
 export const CustomerTableData = [
     {
         date: "13 July, 2021",
@@ -562,4 +563,98 @@ export const AdsDetailsData = [
         description: "Discount on all our products",
         image: Card,
     },
+]
+
+export const SavingsTableData = [
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        accountNo: "1234567890",
+        totalSaving: "3 (click to view)",
+    },
+
 ]
