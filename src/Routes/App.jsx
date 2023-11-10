@@ -8,7 +8,10 @@ import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import ResetPassword from "../Pages/ResetPassword/ResetPassword";
 import Dashboard from "../Pages/Dashboard/Dashboard";
-import Transactions from "../Pages/Transactions/Transactions";
+import Overview from "../Pages/Transactions/Overview";
+import Refunds from "../Pages/Transactions/Refunds";
+import TransactionsDetails from "../Pages/Transactions/TransactionsDetails";
+import TransactionsFullList from "../Pages/Transactions/TransactionsFullList";
 import Savings from "../Pages/Savings/Savings";
 import Cards from "../Pages/Cards/Cards";
 import Account from "../Pages/Account/Account";
@@ -57,7 +60,10 @@ export default function App() {
         {/* <Route index element={<Dashboard />} /> */}
         {/* change this back to being the index element when the authentication endpoint is setup */}
         <Route path="dashboard" element={<AuthRoute><Dashboard /></AuthRoute>} />
-        <Route path="transactions" element={<AuthRoute><Transactions /></AuthRoute>} />
+        <Route path="transactions-details" element={<AuthRoute><TransactionsDetails /></AuthRoute>} />
+        <Route path="transactions-list" element={<AuthRoute><TransactionsFullList /></AuthRoute>} />
+        <Route path="transactions/overview" element={<AuthRoute><Overview /></AuthRoute>} />
+        <Route path="transactions/refunds" element={<AuthRoute><Refunds /></AuthRoute>} />
         <Route path="savings" element={<AuthRoute><Savings /></AuthRoute>} />
         <Route path="savings-details" element={<AuthRoute><SavingsDetails /></AuthRoute>} />
         <Route path="cards" element={<AuthRoute><Cards /></AuthRoute>} />
