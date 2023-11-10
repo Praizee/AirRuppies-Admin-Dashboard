@@ -301,7 +301,11 @@ export const CardDetailsData = [
         gender: "Male",
         phonenumber: "0806xxxxx250",
         emailaddress: "yourmail@gmail.com",
-        dateofbirth: "31-01-1992",
+        houseNumber: "54",
+        streetName: "Obawole street  nidike",
+        state: "Ogun",
+        referralCode: "QWERTYUI",
+        bvn: "675677889965",
     },
 ]
 
@@ -657,4 +661,416 @@ export const SavingsTableData = [
         totalSaving: "3 (click to view)",
     },
 
+]
+
+export const CustomersTableData = [
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        status: "Active",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        status: "Active",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        status: "Active",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        status: "Active",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        status: "Active",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        status: "Active",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        status: "Active",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        status: "Active",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        status: "Active",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+    {
+        fullname: "John Doe",
+        email: "your@email.com",
+        status: "Active",
+        accountNo: "1234567890",
+        date: "13 July 2021",
+    },
+]
+
+export const AirtimeTableData = [
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "GLO",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "AIRTEL",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "GLO",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "AIRTEL",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "GLO",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "AIRTEL",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "GLO",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "AIRTEL",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "GLO",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Airtime",
+        amount: "N 2000",
+        date: "12-03-2023",
+        network: "AIRTEL",
+        beneficiary: "081234567789",
+    },
+]
+
+export const DataTableData = [
+    {
+        transactionType: "Data",
+        amount: "N 2000",
+        dataPlan: "2GB",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Data",
+        amount: "N 2000",
+        dataPlan: "2GB",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Data",
+        amount: "N 2000",
+        dataPlan: "2GB",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Data",
+        amount: "N 2000",
+        dataPlan: "2GB",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081234567789",
+    },
+    {
+        transactionType: "Data",
+        amount: "N 2000",
+        dataPlan: "2GB",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081234567789",
+    },
+]
+
+export const UtilityTableData = [
+    {
+        transactionType: "Sporty Bet",
+        amount: "N 2000",
+        date: "12-03-2023",
+        smartCustomerID: "081234567789",
+    },
+    {
+        transactionType: "Sporty Bet",
+        amount: "N 2000",
+        date: "12-03-2023",
+        smartCustomerID: "081234567789",
+    },
+    {
+        transactionType: "Sporty Bet",
+        amount: "N 2000",
+        date: "12-03-2023",
+        smartCustomerID: "081234567789",
+    },
+    {
+        transactionType: "Sporty Bet",
+        amount: "N 2000",
+        date: "12-03-2023",
+        smartCustomerID: "081234567789",
+    },
+    {
+        transactionType: "Sporty Bet",
+        amount: "N 2000",
+        date: "12-03-2023",
+        smartCustomerID: "081234567789",
+    },
+]
+
+export const ElectricityTableData = [
+    {
+        transactionType: "IKEDC",
+        amount: "N 2000",
+        date: "12-03-2023",
+        meterNumberID: "081234567789",
+    },
+    {
+        transactionType: "IKEDC",
+        amount: "N 2000",
+        date: "12-03-2023",
+        meterNumberID: "081234567789",
+    },
+    {
+        transactionType: "IKEDC",
+        amount: "N 2000",
+        date: "12-03-2023",
+        meterNumberID: "081234567789",
+    },
+    {
+        transactionType: "IKEDC",
+        amount: "N 2000",
+        date: "12-03-2023",
+        meterNumberID: "081234567789",
+    },
+    {
+        transactionType: "IKEDC",
+        amount: "N 2000",
+        date: "12-03-2023",
+        meterNumberID: "081234567789",
+    },
+]
+
+export const CableTVTableData = [
+    {
+        transactionType: "DSTV",
+        amount: "N 2000",
+        date: "12-03-2023",
+        plan: "Dstv Premium",
+        smartNumberID: "081234567789",
+    },
+    {
+        transactionType: "GOTV",
+        amount: "N 2000",
+        date: "12-03-2023",
+        plan: "Gotv Supa",
+        smartNumberID: "988822777272",
+    },
+    {
+        transactionType: "DSTV",
+        amount: "N 2000",
+        date: "12-03-2023",
+        plan: "Dstv Premium",
+        smartNumberID: "081234567789",
+    },
+    {
+        transactionType: "GOTV",
+        amount: "N 2000",
+        date: "12-03-2023",
+        plan: "Gotv Supa",
+        smartNumberID: "988822777272",
+    },
+    {
+        transactionType: "DSTV",
+        amount: "N 2000",
+        date: "12-03-2023",
+        plan: "Dstv Premium",
+        smartNumberID: "081234567789",
+    },
+    {
+        transactionType: "GOTV",
+        amount: "N 2000",
+        date: "12-03-2023",
+        plan: "Gotv Supa",
+        smartNumberID: "988822777272",
+    },
+    {
+        transactionType: "DSTV",
+        amount: "N 2000",
+        date: "12-03-2023",
+        plan: "Dstv Premium",
+        smartNumberID: "081234567789",
+    },
+    {
+        transactionType: "GOTV",
+        amount: "N 2000",
+        date: "12-03-2023",
+        plan: "Gotv Supa",
+        smartNumberID: "988822777272",
+    },
+]
+
+export const AirtimeDetailsData = [
+    {
+        transactionType: "Airtime",
+        amount: "N2000",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081237383939 ",
+        time: "10.00AM",
+        accountName: "James Bond",
+    },
+]
+
+export const DataDetails_Data = [
+    {
+        transactionType: "Airtime",
+        amount: "N2000",
+        date: "12-03-2023",
+        network: "MTN",
+        beneficiary: "081237383939 ",
+        dataPlan: "2GB ",
+        time: "10.00AM",
+        accountName: "James Bond",
+    },
+]
+
+export const UtilityDetailsData = [
+    {
+        transactionType: "Airtime",
+        amount: "N2000",
+        date: "12-03-2023",
+        smartCustomerID: "1234568788686",
+        phoneNumber: "1234568788686 ",
+        time: "5.00PM",
+        accountName: "James Bond",
+    },
+]
+
+export const ElectricityDetailsData = [
+    {
+        transactionType: "IKEDC",
+        amount: "N2000",
+        date: "12-03-2023",
+        meterNumberID: "1234568788686",
+        phoneNumber: "1234568788686 ",
+        email: "temitopedml@gmail.com ",
+        time: "5.00PM",
+        accountName: "James Bond",
+    },
+]
+
+export const CableTVDetailsData = [
+    {
+        transactionType: "GOTV",
+        amount: "N2000",
+        date: "12-03-2023",
+        smartNumberID: "1234568788686",
+        phoneNumber: "1234568788686 ",
+        plan: "DSTV Supa ",
+        time: "5.00PM",
+        accountName: "James Bond",
+    },
 ]
