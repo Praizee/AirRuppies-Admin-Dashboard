@@ -15,9 +15,9 @@ const AccountsTab = () => {
         <section>
             <div className='bg-white my-8 px-4 py-8 tablet:p-6 rounded-lg shadow-lg'>
 
-                <div className='flex'>
-                    <img src={Avatar} alt="User-pic" className="" title="Profile" /> {/* User profile picture */}
-                    <span className='space-y-6 p-4'>
+                <div className='tablet:flex'>
+                    <img src={Avatar} alt="User-pic" className="tablet:mb-0 mb-8" title="Profile" /> {/* User profile picture */}
+                    <span className='space-y-6 tablet:px-2 py-4'>
                         <label htmlFor='file'
                             className="p-3 uppercase cursor-pointer rounded-md border border-[#3C1450] bg-[#3C1450] text-sm font-medium text-white transition hover:bg-transparent hover:text-[#3C1450] focus:outline-none focus:ring active:text-[#3C1450]">
                             Upload new photo
