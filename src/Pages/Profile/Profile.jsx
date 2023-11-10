@@ -25,7 +25,7 @@ const Profile = () => {
 
 
                     <div className='flex w-full gap-2 text-[#32475CDE]'>
-                        <span className='-mt-12'>
+                        <span className='laptop:-mt-12'>
                             <img src={ProfileAvatar} alt='Profile Avatar' className='max-w-[7.5rem] max-h-[7.5rem]' />
                         </span>
 
@@ -36,8 +36,8 @@ const Profile = () => {
                                 </h1>
                             </span>
 
-                            <span className='flex justify-between'>
-                                <span className='flex gap-4'>
+                            <span className='tablet:flex justify-between'>
+                                <span className='laptop:flex gap-4'>
                                     <p className='py-3 flex gap-1 text-[1rem]'>
                                         <BiColorFill className='h-5 w-5' />
                                         Super Admin
@@ -53,7 +53,7 @@ const Profile = () => {
                                 </span>
                                 <span className='flex '>
                                     <Link to="/settings"
-                                        className=" flex gap-2 px-4 py-3 uppercase rounded-md border border-[#3C1450] bg-[#3C1450] text-sm font-medium text-white transition hover:bg-transparent hover:text-[#3C1450] focus:outline-none focus:ring active:text-[#3C1450]">
+                                        className=" flex gap-2 h-max px-4 py-3 uppercase rounded-md border border-[#3C1450] bg-[#3C1450] text-sm font-medium text-white transition hover:bg-transparent hover:text-[#3C1450] focus:outline-none focus:ring active:text-[#3C1450]">
                                         <LuPencilLine className='h-5 w-5' />
                                         Edit Profile
                                     </Link>
