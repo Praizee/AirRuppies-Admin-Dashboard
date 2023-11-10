@@ -49,8 +49,8 @@ export const RolesTable = () => {
 
                             <thead className="text-xs bg-[#FAFAFC] text-[#25324B] border-b">
                                 <tr>
-                                    <th scope="col" class="p-4">
-                                        <div class="flex items-center">
+                                    <th scope="col" className="p-4">
+                                        <div className="flex items-center">
                                             <input
                                                 id="checkbox-all-search"
                                                 type="checkbox"
@@ -81,8 +81,8 @@ export const RolesTable = () => {
                             {displayedData.map((item, index) => (
                                 <tbody key={index}>
                                     <tr className="bg-white text-[#32475C99] font-medium border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                        <td class="w-4 p-4">
-                                            <div class="flex items-center">
+                                        <td className="w-4 p-4">
+                                            <div className="flex items-center">
                                                 <input
                                                     id="checkbox-table-search-1"
                                                     type="checkbox"
