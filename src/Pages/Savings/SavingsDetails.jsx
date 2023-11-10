@@ -97,8 +97,9 @@ const SavingsDetails = () => (
                 </span>
             </span>
 
+            {/* Active Savings and Savings History */}
             <div className='laptop:flex justify-between gap-20'>
-                {/* 02 */}
+                {/* 01 */}
                 <div className='bg-white w- space-y-4 w-full text-[#25324B] my-8 py-8 px-4 rounded-lg shadow-lg'>
                     <div className='flex justify-between gap-4 mb-4'>
                         <p className='font-semibold'>
@@ -250,6 +251,7 @@ const SavingsDetails = () => (
                     </div>
                 </div>
             </div>
+            {/* End of Active Savings and Savings History */}
 
             {/* Transactions */}
             <div className='bg-white py-8 space-y-4 border rounded-lg'>
