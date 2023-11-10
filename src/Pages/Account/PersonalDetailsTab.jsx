@@ -95,7 +95,7 @@ const PersonalDetailsTab = () => {
                                     House number
                                 </p>
                                 <p className="text-base text-[#25324B] leading-normal font-bold">
-                                    Free
+                                    {item.houseNumber}
                                 </p>
                             </span>
                         </div>
@@ -105,7 +105,7 @@ const PersonalDetailsTab = () => {
                                     Street Name
                                 </p>
                                 <p className="text-base text-[#25324B] leading-normal font-bold">
-                                    Free
+                                    {item.streetName}
                                 </p>
                             </span>
                         </div>
@@ -115,7 +115,7 @@ const PersonalDetailsTab = () => {
                                     State
                                 </p>
                                 <p className="text-base text-[#25324B] leading-normal font-bold">
-                                    {item.dateofbirth}
+                                    {item.state}
                                 </p>
                             </span>
                         </div>
@@ -125,7 +125,7 @@ const PersonalDetailsTab = () => {
                                     Referral Code (Optional)
                                 </p>
                                 <p className="text-base text-[#25324B] leading-normal font-bold">
-                                    {item.dateofbirth}
+                                    {item.referralCode}
                                 </p>
                             </span>
                         </div>
@@ -135,7 +135,7 @@ const PersonalDetailsTab = () => {
                                     BVN
                                 </p>
                                 <p className="text-base text-[#25324B] leading-normal font-bold">
-                                    {item.dateofbirth}
+                                    {item.bvn}
                                 </p>
                             </span>
                         </div>
