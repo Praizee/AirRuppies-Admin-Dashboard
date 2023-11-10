@@ -48,7 +48,7 @@ export function SidebarWithSearch({ showSidebar }) {
     return (
         // <Card className="h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
         <Card
-            className={`h-full ${showSidebar ? "block" : "hidden"
+            className={`${showSidebar ? "block" : "hidden"
                 } rounded-none border-none w-full max-w-[18rem] left-0 bg-transparent px-1 pt-[rem]`}
         >
 
@@ -95,7 +95,7 @@ export function SidebarWithSearch({ showSidebar }) {
                     </ListItem>
                     <AccordionBody className="py-1">
                         <List className="p-0">
-                            <NavLink to="savings"
+                            <NavLink to="transactions/overview"
                                 className={({ isActive }) =>
                                     isActive
                                         ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
@@ -108,7 +108,7 @@ export function SidebarWithSearch({ showSidebar }) {
                                     Overview
                                 </ListItem>
                             </NavLink>
-                            <NavLink to="savings"
+                            <NavLink to="transactions/refunds"
                                 className={({ isActive }) =>
                                     isActive
                                         ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'

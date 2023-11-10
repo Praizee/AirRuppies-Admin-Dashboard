@@ -49,7 +49,7 @@ const Navbar = ({ toggleSidebar }) => {
       </div>
 
       {/* search bar */}
-      <div className="relative hidden laptop:block flex-1 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.1)]">
+      <div className="relative hidden laptop:block flex-1 rounded-md shadow-md">
         <label htmlFor="Search" className="sr-only"> Search </label>
 
         <input
