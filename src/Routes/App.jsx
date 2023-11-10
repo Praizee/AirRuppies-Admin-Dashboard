@@ -13,7 +13,6 @@ import Savings from "../Pages/Savings/Savings";
 import Cards from "../Pages/Cards/Cards";
 import Account from "../Pages/Account/Account";
 import Customers from "../Pages/Customers/Customers";
-import BillPayment from "../Pages/BillPayment/BillPayment";
 import Admin from "../Pages/Admin/Admin";
 import Roles from "../Pages/Roles/Roles";
 import Permissions from "../Pages/Permissions/Permissions";
@@ -31,6 +30,18 @@ import AccountsDetails from "../Pages/Account/AccountsDetails";
 import PromotionDetails from "../Pages/Promotions/PromotionDetails";
 import AdsDetails from "../Pages/Ads/AdsDetails";
 import SavingsDetails from "../Pages/Savings/SavingsDetails";
+import CustomersDetails from "../Pages/Customers/CustomersDetails";
+import Airtime from "../Pages/BillPayment/Airtime/Airtime";
+import AirtimeDetails from "../Pages/BillPayment/Airtime/AirtimeDetails";
+import Data from "../Pages/BillPayment/Data/Data";
+import DataDetails from "../Pages/BillPayment/Data/DataDetails";
+import Utility from "../Pages/BillPayment/Utility/Utility";
+import UtilityDetails from "../Pages/BillPayment/Utility/UtilityDetails";
+import Electricity from "../Pages/BillPayment/Electricity/Electricity";
+import ElectricityDetails from "../Pages/BillPayment/Electricity/ElectricityDetails";
+import CableTV from "../Pages/BillPayment/CableTV/CableTV";
+import CableTVDetails from "../Pages/BillPayment/CableTV/CableTVDetails";
+
 
 export default function App() {
 
@@ -54,7 +65,17 @@ export default function App() {
         <Route path="account" element={<AuthRoute><Account /></AuthRoute>} />
         <Route path="account-details" element={<AuthRoute><AccountsDetails /></AuthRoute>} />
         <Route path="customers" element={<AuthRoute><Customers /></AuthRoute>} />
-        <Route path="bill-payment" element={<AuthRoute><BillPayment /></AuthRoute>} />
+        <Route path="customers-details" element={<AuthRoute><CustomersDetails /></AuthRoute>} />
+        <Route path="bill-payment/airtime" element={<AuthRoute><Airtime /></AuthRoute>} />
+        <Route path="bill-payment/airtime-details" element={<AuthRoute><AirtimeDetails /></AuthRoute>} />
+        <Route path="bill-payment/data" element={<AuthRoute><Data /></AuthRoute>} />
+        <Route path="bill-payment/data-details" element={<AuthRoute><DataDetails /></AuthRoute>} />
+        <Route path="bill-payment/utility" element={<AuthRoute><Utility /></AuthRoute>} />
+        <Route path="bill-payment/utility-details" element={<AuthRoute><UtilityDetails /></AuthRoute>} />
+        <Route path="bill-payment/electricity" element={<AuthRoute><Electricity /></AuthRoute>} />
+        <Route path="bill-payment/electricity-details" element={<AuthRoute><ElectricityDetails /></AuthRoute>} />
+        <Route path="bill-payment/cabletv" element={<AuthRoute><CableTV /></AuthRoute>} />
+        <Route path="bill-payment/cabletv-details" element={<AuthRoute><CableTVDetails /></AuthRoute>} />
         <Route path="admin" element={<AuthRoute><Admin /></AuthRoute>} />
         <Route path="roles" element={<AuthRoute><Roles /></AuthRoute>} />
         <Route path="permissions" element={<AuthRoute><Permissions /></AuthRoute>} />

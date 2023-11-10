@@ -5,9 +5,9 @@ import { auth } from '../../Firebase/firebase.js';
 
 import {
     Card, List, ListItem, ListItemPrefix, Accordion,
-    AccordionHeader,
+    AccordionHeader, AccordionBody
 } from "@material-tailwind/react";
-import { ChevronRightIcon } from "@heroicons/react/24/outline";
+import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { LiaMoneyBillAltSolid } from "react-icons/lia";
 import { LuLogOut } from "react-icons/lu";
 import { IoSettingsOutline } from "react-icons/io5";
@@ -20,6 +20,7 @@ import { GiPayMoney } from "react-icons/gi";
 import { GrTransaction } from "react-icons/gr";
 import { BiUserCheck, BiCrown } from "react-icons/bi";
 import { FiCreditCard } from "react-icons/fi";
+import { BsDot } from "react-icons/bs";
 
 
 
@@ -36,6 +37,13 @@ export function SidebarWithSearch({ showSidebar }) {
         });
     }
     // end of logout
+
+    const [open, setOpen] = React.useState(0);
+    const [openAlert, setOpenAlert] = React.useState(true);
+
+    const handleOpen = (value) => {
+        setOpen(open === value ? 0 : value);
+    };
 
     return (
         // <Card className="h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
@@ -66,29 +74,56 @@ export function SidebarWithSearch({ showSidebar }) {
                     </ListItem>
                 </NavLink>
 
-                <NavLink to="transactions"
-                    className={({ isActive }) =>
-                        isActive
-                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
-                            : 'bg-transparent'
-                    }>
-                    <Accordion
-                        icon={
-                            <ChevronRightIcon strokeWidth={2.5} className="mx-auto h-4 w-4" />
-                        }
-                    >
-                        <ListItem className="p-0">
-                            <AccordionHeader className="border-b-0 py-2 px-3">
-                                <ListItemPrefix>
-                                    <GrTransaction className="h-5 w-5" />
-                                </ListItemPrefix>
-                                <p className="mr-auto font-normal">
-                                    Transactions
-                                </p>
-                            </AccordionHeader>
-                        </ListItem>
-                    </Accordion>
-                </NavLink>
+                <Accordion
+                    open={open === 1}
+                    icon={
+                        <ChevronDownIcon
+                            strokeWidth={2.5}
+                            className={`mx-auto h-4 w-4 transition-transform ${open === 1 ? "rotate-180" : ""}`}
+                        />
+                    }
+                >
+                    <ListItem className="p-0" selected={open === 1}>
+                        <AccordionHeader onClick={() => handleOpen(1)} className="border-b-0 p-3">
+                            <ListItemPrefix>
+                                <GrTransaction className="h-5 w-5" />
+                            </ListItemPrefix>
+                            <p className="mr-auto font-normal">
+                                Transactions
+                            </p>
+                        </AccordionHeader>
+                    </ListItem>
+                    <AccordionBody className="py-1">
+                        <List className="p-0">
+                            <NavLink to="savings"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                                        : 'bg-transparent'
+                                }>
+                                <ListItem className="py-2">
+                                    <ListItemPrefix>
+                                        <BsDot strokeWidth={3} className="h-4 w-4" />
+                                    </ListItemPrefix>
+                                    Overview
+                                </ListItem>
+                            </NavLink>
+                            <NavLink to="savings"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                                        : 'bg-transparent'
+                                }>
+                                <ListItem className="py-2">
+                                    <ListItemPrefix>
+                                        <BsDot strokeWidth={3} className="h-4 w-4" />
+                                    </ListItemPrefix>
+                                    Refunds
+                                </ListItem>
+                            </NavLink>
+                        </List>
+                    </AccordionBody>
+                </Accordion>
 
                 <NavLink to="savings"
                     className={({ isActive }) =>
@@ -154,29 +189,95 @@ export function SidebarWithSearch({ showSidebar }) {
                     </ListItem>
                 </NavLink>
 
-                <NavLink to="bill-payment"
-                    className={({ isActive }) =>
-                        isActive
-                            ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
-                            : 'bg-transparent'
-                    }>
-                    <Accordion
-                        icon={
-                            <ChevronRightIcon strokeWidth={2.5} className="mx-auto h-4 w-4" />
-                        }
-                    >
-                        <ListItem className="p-0">
-                            <AccordionHeader className="border-b-0 py-2 px-3">
-                                <ListItemPrefix>
-                                    <LiaMoneyBillAltSolid className="h-5 w-5" />
-                                </ListItemPrefix>
-                                <p className="mr-auto font-normal">
-                                    Bill Payment
-                                </p>
-                            </AccordionHeader>
-                        </ListItem>
-                    </Accordion>
-                </NavLink>
+                <Accordion
+                    open={open === 2}
+                    icon={
+                        <ChevronDownIcon
+                            strokeWidth={2.5}
+                            className={`mx-auto h-4 w-4 transition-transform ${open === 2 ? "rotate-180" : ""}`}
+                        />
+                    }
+                >
+                    <ListItem className="p-0" selected={open === 2}>
+                        <AccordionHeader onClick={() => handleOpen(2)} className="border-b-0 p-3">
+                            <ListItemPrefix>
+                                <LiaMoneyBillAltSolid className="h-5 w-5" />
+                            </ListItemPrefix>
+                            <p color="" className="mr-auto font-normal">
+                                Bill Payment
+                            </p>
+                        </AccordionHeader>
+                    </ListItem>
+                    <AccordionBody className="py-1">
+                        <List className="p-0">
+                            <NavLink to="bill-payment/airtime"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                                        : 'bg-transparent'
+                                }>
+                                <ListItem className="py-2">
+                                    <ListItemPrefix>
+                                        <BsDot strokeWidth={3} className="h-4 w-4" />
+                                    </ListItemPrefix>
+                                    Airtime
+                                </ListItem>
+                            </NavLink>
+                            <NavLink to="bill-payment/data"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                                        : 'bg-transparent'
+                                }>
+                                <ListItem className="py-2">
+                                    <ListItemPrefix>
+                                        <BsDot strokeWidth={3} className="h-4 w-4" />
+                                    </ListItemPrefix>
+                                    Data
+                                </ListItem>
+                            </NavLink>
+                            <NavLink to="bill-payment/utility"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                                        : 'bg-transparent'
+                                }>
+                                <ListItem className="py-2">
+                                    <ListItemPrefix>
+                                        <BsDot strokeWidth={3} className="h-4 w-4" />
+                                    </ListItemPrefix>
+                                    Utility
+                                </ListItem>
+                            </NavLink>
+                            <NavLink to="bill-payment/electricity"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                                        : 'bg-transparent'
+                                }>
+                                <ListItem className="py-2">
+                                    <ListItemPrefix>
+                                        <BsDot strokeWidth={3} className="h-4 w-4" />
+                                    </ListItemPrefix>
+                                    Electricity
+                                </ListItem>
+                            </NavLink>
+                            <NavLink to="bill-payment/cabletv"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? 'bg-[#F7EDFC] text-[#3C1450] font-bold rounded-lg'
+                                        : 'bg-transparent'
+                                }>
+                                <ListItem className="py-2">
+                                    <ListItemPrefix>
+                                        <BsDot strokeWidth={3} className="h-4 w-4" />
+                                    </ListItemPrefix>
+                                    Cable TV
+                                </ListItem>
+                            </NavLink>
+                        </List>
+                    </AccordionBody>
+                </Accordion>
 
                 <NavLink to="admin"
                     className={({ isActive }) =>
