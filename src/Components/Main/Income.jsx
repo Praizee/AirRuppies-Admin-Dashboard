@@ -3,7 +3,7 @@ import IncomeChart from "../../assets/Income-Chart.png"
 
 const Income = () => {
     return (
-        <section className="">
+        <section className="flex-">
             <div className="">
                 <div className="border bg-white shadow-md text-[#32475CDE] rounded-lg space-y-1 relative">
                     <span className="">
@@ -16,7 +16,7 @@ const Income = () => {
                     </span>
 
                     <span>
-                        <img src={IncomeChart} className="mt-1" alt="income-chart" />
+                        <img src={IncomeChart} className="mt-1 mx-auto" alt="income-chart" />
                     </span>
                 </div>
             </div>

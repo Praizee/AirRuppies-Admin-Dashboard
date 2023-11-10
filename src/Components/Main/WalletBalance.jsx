@@ -3,9 +3,9 @@ import WalletChart from "../../assets/Wallet-Chart.png"
 
 const WalletBalance = () => {
     return (
-        <section className="">
+        <section className="flex-1">
             <div className="">
-                <div className="border my-4 bg-white shadow-md w-max text-[#32475CDE] p-4 rounded-lg relative">
+                <div className="border my-4 bg-white shadow-md w-ma text-[#32475CDE] p-4 rounded-lg relative">
                     <div className="flex justify-between gap-4">
                         <span className="">
                             <span className="">
@@ -18,7 +18,7 @@ const WalletBalance = () => {
                             </span>
 
                             <span className="">
-                                <p className="text-[#40DD7F] mt-14 text-[0.9375rem] font-bold">
+                                <p className="text-[#40DD7F] mt-6 text-[0.9375rem] font-bold">
                                     ↑ 68.2%
                                 </p>
                                 <h2 className="text-[1.5rem] mt-2 font-black">
