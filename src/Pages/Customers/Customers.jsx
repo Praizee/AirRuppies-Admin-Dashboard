@@ -2,20 +2,30 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAppContext } from '../../Context/AppContext';
 import { getDatabase, ref, set } from 'firebase/database';
+import { CustomersTable } from './CustomersTable';
+import CustomersStatistics from './CustomersStatistics';
 
 
 const Customers = () => {
     return (
-        <div className="container pt-20 pb-0">
+        <section>
+            <div className="container pt-12 pb-0">
+                <span className=''>
+                    <h1 className="text-[1.5rem] mt-4 text-[#2E2E3A] leading-normal font-bold">
+                        Customers
+                    </h1>
+                    <p className='text-[#32475C99] font-semibold'>
+                        Showing your customers metrics for July 16,2023 - July 25,2023
+                    </p>
+                </span>
 
-            <div className='bg-white px-4 py-8 tablet:p-6 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
-                <h1 className="text-[2rem] text-center mt-4 mb-2 text-[#2E2E3A] leading-normal font-bold">
-                    Customers
-                </h1>
+                <CustomersStatistics />
 
-
+                <div className='bg-white rounded-lg overflow-x-auto mt-8 p-0 shadow-md'>
+                    <CustomersTable />
+                </div>
             </div>
-        </div>
+        </section>
     )
 }
 
