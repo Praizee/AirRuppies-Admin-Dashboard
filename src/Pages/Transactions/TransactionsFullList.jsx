@@ -17,7 +17,7 @@ const TransactionsDetails = () => {
                     </p>
                 </span>
 
-                <div className='bg-white rounded-lg overflow-x-auto flex justify-between gap-2 p-6 mt-8 shadow-md'>
+                <div className='bg-white rounded-lg overflow-x-auto laptop:flex justify-between gap-2 p-6 mt-8 shadow-md'>
                     {/* search bar */}
                     <div className="relative">
                         <input
@@ -33,7 +33,7 @@ const TransactionsDetails = () => {
                         </span>
                     </div>
                     {/* end of search bar */}
-                    <span className='flex gap-4'>
+                    <span className='flex mt-4 laptop:mt-0 gap-4'>
                         <button className='btn rounded-none normal-case bg-transparent hover:bg-transparent text-[1rem] text-[#202430] border border-[#D6DDEB] font-bold'>
                             <BsFilter className='h-5 w-5' />
                             filter
