@@ -10,6 +10,7 @@ import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import SignUpImg from "../../assets/young-afro-man-listening-music-with-headphones_58466-16300.webp"
 import { Spinner } from "@material-tailwind/react"; // Import the Spinner component
 import Alerts from "../../Components/Alerts/Alerts.jsx";
+import AppLogo from "../../assets/App Logo.png";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -196,6 +197,10 @@ const SignUp = () => {
                 {/* border-2 border-dotted border-[#551B73] px-8 py-2 */}
                 <form
                   className=" mt-8 md:mt-0 rounded-lg grid grid-cols-6 gap-6 shadow-xl p-10 md:p-5">
+
+                  <div className="col-span-6">
+                    {/* <img src={AppLogo} className="mx-auto -mt-2" alt="app-logo" /> */}
+                  </div>
 
                   <div className="col-span-6 sm:col-span-3">
                     <label
