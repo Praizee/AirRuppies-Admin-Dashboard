@@ -146,10 +146,10 @@ const SignUp = () => {
                 </h2>
 
                 <p className="mt-4 leading-relaxed text-gray-200">
-                  Discover a world of convenience with our digital wallet app.
+                  Discover a world of convenience with our Admin Dashboard.
                   Easily manage your finances and enjoy a wide range of services,
                   including cable subscription, electricity bill payments, mobile
-                  airtime and data purchases, and hassle-free cash transfers.
+                  airtime and data purchases.
                   Start exploring the possibilities today!
                 </p>
               </div>
@@ -161,7 +161,7 @@ const SignUp = () => {
               <div className="max-w-xl lg:max-w-3xl">
                 <div className="relative -mt-16 block lg:hidden">
                   <a
-                    className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-blue-600 sm:h-20 sm:w-20"
+                    className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-[#551B73] sm:h-20 sm:w-20"
                     href="/"
                   >
                     <span className="sr-only">Home</span>
@@ -185,17 +185,17 @@ const SignUp = () => {
                   </h1>
 
                   <p className="mt-4 leading-relaxed text-gray-500">
-                    Discover a world of convenience with our digital wallet app.
+                    Discover a world of convenience with our Admin Dashboard.
                     Easily manage your finances and enjoy a wide range of services,
                     including cable subscription, electricity bill payments, mobile
-                    airtime and data purchases, and hassle-free cash transfers.
+                    airtime and data purchases.
                     Start exploring the possibilities today!
                   </p>
                 </div>
 
-                {/* border-2 border-dotted border-[#0071F2] px-8 py-2 */}
+                {/* border-2 border-dotted border-[#551B73] px-8 py-2 */}
                 <form
-                  className=" mt-8 md:mt-0 rounded-lg grid grid-cols-6 gap-6 border-2 border-dotted border-[#0071F2] p-10 md:p-5">
+                  className=" mt-8 md:mt-0 rounded-lg grid grid-cols-6 gap-6 shadow-xl p-10 md:p-5">
 
                   <div className="col-span-6 sm:col-span-3">
                     <label
@@ -298,11 +298,11 @@ const SignUp = () => {
                   <div className="col-span-6">
                     <p className="text-[0.725rem] text-gray-500">
                       By creating an account, you agree to our &nbsp;
-                      <a className="text-[#0071F2] text-[0.725rem] link link-hover ">
+                      <a className="text-[#551B73] text-[0.725rem] link link-hover ">
                         terms and conditions
                       </a>
                       &nbsp; and &nbsp;
-                      <a className="text-[#0071F2] text-[0.725rem] link link-hover">privacy policy</a>.
+                      <a className="text-[#551B73] text-[0.725rem] link link-hover">privacy policy</a>.
                     </p>
                   </div>
 
@@ -310,7 +310,7 @@ const SignUp = () => {
                     <button
                       type="submit"
                       onClick={onSubmit}
-                      className="inline-block w-full shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
+                      className="inline-block w-full shrink-0 rounded-md border border-[#551B73] bg-[#551B73] px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-[#551B73] focus:outline-none focus:ring active:text-blue-500"
                     >
                       {loading ? (
                         <>
@@ -329,7 +329,7 @@ const SignUp = () => {
                   <p className="-mt-4 col-span-6 text-sm text-gray-500">
                     Already have an account? &nbsp;
                     <Link to="/"
-                      className="text-[#0071F2] font-semibold text-sm link link-hover">
+                      className="text-[#551B73] font-semibold text-sm link link-hover">
                       Log in
                     </Link>.
                   </p>
@@ -337,7 +337,7 @@ const SignUp = () => {
                   <div className="col-span-6 sm:flex sm:items-center mx-auto sm:gap-4">
                     <p className="mt-4 text-sm sm:mt-0">
                       Have any questions? &nbsp;
-                      <a className="text-[#0071F2] text-sm font-semibold link link-hover">Chat with us</a>.
+                      <a className="text-[#551B73] text-sm font-semibold link link-hover">Chat with us</a>.
                     </p>
                   </div>
                   {/* Display the Alerts component with error and success messages */}
