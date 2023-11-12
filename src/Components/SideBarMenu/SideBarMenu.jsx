@@ -53,10 +53,6 @@ export function SidebarWithSearch({ showSidebar }) {
         >
 
             <List>
-                {/* <div className=" mx-auto py-2">
-                    <FaCircleUser size={60} />
-                </div> */}
-
                 <NavLink to="dashboard"
                     className={({ isActive }) =>
                         isActive
