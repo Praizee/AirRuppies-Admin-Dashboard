@@ -114,7 +114,7 @@ const TierTab = () => {
                             </label>
                         </div>
 
-                        <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
+                        <div className="col-span-6 flex space-x-6">
                             <button type='submit'
                                 className=" px-4 py-3 uppercase rounded-md border border-[#3C1450] bg-[#3C1450] text-sm font-medium text-white transition hover:bg-transparent hover:text-[#3C1450] focus:outline-none focus:ring active:text-[#3C1450]">
                                 Save Changes
