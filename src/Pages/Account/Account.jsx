@@ -19,7 +19,7 @@ const Account = () => {
                     </p>
                 </span>
 
-                <div className='py-4'>
+                <div className='pt-4'>
                     <AccountStatistics />
                 </div>
 
