@@ -25,12 +25,12 @@ module.exports = withMT({
       'desktop': '1280px',
       // => @media (min-width: 1280px) { ... }
     },
+
     fontFamily: {
       'sans': ['ui-sans-serif', 'system-ui',],
       'serif': ['ui-serif', 'Georgia',],
       'mono': ['ui-monospace', 'monospace', 'Space Mono', 'SFMono-Regular',],
       'cursive': ['Dancing Script', 'cursive',],
-      // 'Bad Script', 
     },
 
     fontWeight: {
@@ -46,7 +46,20 @@ module.exports = withMT({
       extrabold: '800',
       'extra-bold': '800',
       black: '900',
-    }
+    },
+
+    animation: {
+      loader: 'loader 0.6s infinite alternate',
+    },
+
+    keyframes: {
+      loader: {
+        to: {
+          opacity: 0.1,
+          transform: 'translate3d(0, -1rem, 0)',
+        },
+      },
+    },
   },
   plugins: [require("daisyui"), require('flowbite/plugin')],
   daisyui: {
