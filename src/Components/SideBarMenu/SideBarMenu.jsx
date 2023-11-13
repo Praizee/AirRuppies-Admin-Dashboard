@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from '../../Firebase/firebase.js';
@@ -46,12 +46,19 @@ export function SidebarWithSearch({ showSidebar }) {
     };
 
     return (
+        // Old**
         // <Card className="h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
-        <Card
-            className={`${showSidebar ? "block" : "hidden"
-                } rounded-none border-none w-full max-w-[18rem] left-0 bg-transparent px-1 pt-[rem]`}
-        >
 
+        // Recent ** ('pushes' content to the right )
+        // <Card
+        //     className={`${showSidebar ? "block" : "hidden"
+        //         } rounded-none border-none w-full max-w-[18rem] left-0 bg-transparent px-1 pt-[rem]`}
+        // >
+
+        <Card
+            className={`${showSidebar ? "fixed laptop:relative top-0 laptop:top-auto pt-24 laptop:pt-0 bottom-0 left-0 h-full z-50 bg-white overflow-y-auto" : "hidden"
+                } rounded-none border-none w-full max-w-[18rem] px-1 pt-[rem]`}
+        >
             <List>
                 <NavLink to="dashboard"
                     className={({ isActive }) =>

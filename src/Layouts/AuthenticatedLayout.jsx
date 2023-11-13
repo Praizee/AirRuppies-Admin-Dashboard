@@ -21,8 +21,8 @@ const AuthenticatedLayout = () => {
 
   // Function to handle window resize
   const handleResize = () => {
-    if (window.innerWidth >= 768) {
-      setShowSidebar(true); // Show the sidebar for screens wider than or equal to 768px
+    if (window.innerWidth >= 1024) {
+      setShowSidebar(true); // Show the sidebar for screens wider than or equal to 768px (Changed it to 1024px)
     }
   };
 
@@ -43,6 +43,7 @@ const AuthenticatedLayout = () => {
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
+
 
   return (
     <section>
