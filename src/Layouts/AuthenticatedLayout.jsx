@@ -45,6 +45,9 @@ const AuthenticatedLayout = () => {
   };
 
 
+  // Scroll to the top when the route changes
+  // TBD
+
   return (
     <section>
       <div className="flex h-screen">
