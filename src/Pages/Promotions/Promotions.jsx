@@ -12,7 +12,7 @@ const Promotions = () => {
     return (
         <section>
             <div className="container pt-12 pb-0">
-                <div className='flex mt-4 justify-between gap-6'>
+                <div className='laptop:flex mt-4 justify-between gap-6'>
                     <span className=''>
                         <h1 className="text-[1.5rem] text-[#3C1450] leading-normal font-bold">
                             Promotion

@@ -44,49 +44,47 @@ export function CreateConditionModal() {
                 <hr className="my-4" />
 
                 <DialogBody className="">
-                    <Typography>
-                        <form className=" rounded-lg grid grid-cols-6 px-2 space-y-4">
+                    <form className=" rounded-lg grid grid-cols-6 px-2 space-y-4">
 
-                            <div className="col-span-6 ">
-                                <label htmlFor="Email" className="block text-sm font-semibold text-gray-700">
-                                    Name of  condition
-                                </label>
+                        <div className="col-span-6 ">
+                            <label htmlFor="Email" className="block text-sm font-semibold text-gray-700">
+                                Name of  condition
+                            </label>
 
-                                <input
-                                    type="text"
-                                    id="name-of-permissions"
-                                    placeholder="Admin"
-                                    defaultValue="Admin"
-                                    required
-                                    autoFocus
-                                    className="input w-full mt-1 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-                                />
-                            </div>
+                            <input
+                                type="text"
+                                id="name-of-permissions"
+                                placeholder="Admin"
+                                defaultValue="Admin"
+                                required
+                                autoFocus
+                                className="input w-full mt-1 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                            />
+                        </div>
 
-                            <div className="col-span-6 ">
-                                <label htmlFor="Email" className="block text-sm font-semibold text-gray-700">
-                                    Description
-                                </label>
+                        <div className="col-span-6 ">
+                            <label htmlFor="Email" className="block text-sm font-semibold text-gray-700">
+                                Description
+                            </label>
 
-                                <input
-                                    type="text"
-                                    id="description"
-                                    placeholder="Description"
-                                    defaultValue="1"
-                                    required
-                                    autoFocus
-                                    className="input w-full mt-1 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-                                />
-                            </div>
+                            <input
+                                type="text"
+                                id="description"
+                                placeholder="Description"
+                                defaultValue="1"
+                                required
+                                autoFocus
+                                className="input w-full mt-1 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                            />
+                        </div>
 
-                            <div className="col-span-6">
-                                <button
-                                    className=" w-full mt-6 laptop:mt-2 rounded-md border border-[#3C1450] bg-[#3C1450] p-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-[#3C1450] focus:outline-none focus:ring active:text-blue-500"
-                                >Save
-                                </button>
-                            </div>
-                        </form>
-                    </Typography>
+                        <div className="col-span-6">
+                            <button
+                                className=" w-full mt-6 laptop:mt-2 rounded-md border border-[#3C1450] bg-[#3C1450] p-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-[#3C1450] focus:outline-none focus:ring active:text-blue-500"
+                            >Save
+                            </button>
+                        </div>
+                    </form>
 
                 </DialogBody>
             </Dialog>
