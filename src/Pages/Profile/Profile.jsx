@@ -16,7 +16,7 @@ const Profile = () => {
     return (
         <div className="container pt-20 pb-0">
 
-            <div className='bg-white rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
+            <div className='bg-white rounded-lg shadow-lg'>
 
                 <img src={ProfileBackground} alt='profile-bg' className='w-full max-h-[15.625rem]' />
                 {/* w-fit */}
@@ -67,7 +67,8 @@ const Profile = () => {
 
             <div className='laptop:flex mt-8 gap-10 justify-between'>
                 {/* About */}
-                <div className='bg-white laptop:max-w-[22.5rem] w-full max-h-[23rem] rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
+                <div className='bg-white rounded-lg shadow-lg'>
+                    {/* flex-1 */}
                     <div className='px-4 py-6 tablet:p-6 text-[#32475CDE]'>
                         <h2 className='mb-4 text-[0.75rem]'>
                             ABOUT
@@ -108,7 +109,7 @@ const Profile = () => {
                 </div>
 
                 {/* Admin Activity Timeline */}
-                <div className='bg-white mt-8 laptop:mt-0 w-full laptop:max-w-[46.6rem] min-h-[23rem] max-h-[24rem] rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
+                <div className='bg-white flex-1 mt-8 laptop:mt-0 w-full rounded-lg shadow-lg'>
                     <div className='px-4 py-6 tablet:p-6 text-[#32475CDE]'>
                         <span className='space-y-2'>
                             <h1 className='font-black text-[1.2rem] mb-6'>
