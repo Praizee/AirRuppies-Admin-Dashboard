@@ -99,7 +99,7 @@ const RolesList = () => {
                                 <AddRolesModal />
 
                                 <p className="text-sm font-medium text-[#32475C99]">
-                                    Add new role, if it doesn't <br />
+                                    Add new role, if it doesn't
                                     exist.
                                 </p>
                             </span>
