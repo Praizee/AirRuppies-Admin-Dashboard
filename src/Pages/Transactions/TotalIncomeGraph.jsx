@@ -7,7 +7,7 @@ const TotalIncomeGraph = () => {
         <section className="flex-1 text-[#32475CDE]">
             <div className="p-4 laptop:flex gap-4 bg-white shadow-md rounded-lg">
                 <div className="flex-1">
-                    <span className="flex justify-between">
+                    <span className="laptop:flex justify-between">
                         <span>
                             <h2 className="text-[1.25rem] font-bold">Total Income</h2>
                             <p>Yearly report overview</p>
