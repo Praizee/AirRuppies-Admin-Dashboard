@@ -40,11 +40,8 @@ module.exports = withMT({
       normal: '400',
       medium: '500',
       semibold: '600',
-      notbold: '620',
-      almostbold: '650',
       bold: '700',
       extrabold: '800',
-      'extra-bold': '800',
       black: '900',
     },
 
@@ -62,9 +59,6 @@ module.exports = withMT({
     },
   },
   plugins: [require("daisyui"), require('flowbite/plugin')],
-  daisyui: {
-    themes: ["light", "dark", "cupcake"],
-  },
 });
 
 // Made with 💙 by Stephen Adeniji
