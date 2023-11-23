@@ -13,8 +13,7 @@ module.exports = withMT({
     extend: {},
 
     screens: {
-      'smaller': '350px',
-      // formerly 450
+      'smaller': '450px',
 
       'tablet': '640px',
       // => @media (min-width: 640px) { ... }
