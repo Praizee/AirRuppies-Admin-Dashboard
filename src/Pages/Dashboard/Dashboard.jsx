@@ -86,7 +86,8 @@ const Dashboard = () => {
                 </div>
               </div>
 
-              <div className="overflow-x-auto max--[20.5rem] min-w-[19.5rem] tablet:max--[35.5rem] laptop:max-w-full">
+              <div className="">
+                {/* overflow-x-auto min-w-[19.5rem] laptop:max-w-full */}
                 <CustomerTable />
               </div>
             </div>
