@@ -60,7 +60,7 @@ const AuthenticatedLayout = () => {
 
           <main className="flex-1 overflow-x-auto overflow-y-auto bg-[#F6F6F6] dark:bg-gray-900">
             <div className="container mx-auto px-3 tablet:px-6 pt-8">
-              <Outlet />
+              {user && !loading && <Outlet />}
               {user && !loading && <Footer />}
             </div>
           </main>
