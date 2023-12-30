@@ -18,6 +18,13 @@ export function DialogDefault() {
                 Open Dialog
             </Button>
             <Dialog open={open} handler={handleOpen}>
+                <div className="text-right">
+                    <button onClick={handleOpen} title="Close">
+                        <h1 className="laptop:text-lg text-2xl px-4 py-2 font-bold">
+                            X
+                        </h1>
+                    </button>
+                </div>
                 <DialogHeader>Its a simple dialog.</DialogHeader>
                 <DialogBody>
                     The key to more success is to have a lot of pillows. Put it this way,
