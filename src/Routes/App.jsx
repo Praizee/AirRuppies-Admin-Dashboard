@@ -44,6 +44,7 @@ import Electricity from "../Pages/BillPayment/Electricity/Electricity";
 import ElectricityDetails from "../Pages/BillPayment/Electricity/ElectricityDetails";
 import CableTV from "../Pages/BillPayment/CableTV/CableTV";
 import CableTVDetails from "../Pages/BillPayment/CableTV/CableTVDetails";
+import BVNForm from "../Pages/SignUp/BVN";
 
 
 export default function App() {
@@ -53,6 +54,7 @@ export default function App() {
       <Route element={<PublicLayout />}>
         <Route index element={<Login />} />
         <Route path="signup" element={<SignUp />} />
+        <Route path="bvn-form" element={<BVNForm />} />
         <Route path="reset-password" element={<ResetPassword />} />
       </Route>
 
